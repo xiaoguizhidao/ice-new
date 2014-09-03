@@ -1,0 +1,4 @@
+<?php if(Mage::helper('dtm/data')->isDtmEnabled(Mage::app()->getStore())): ?>
+	<!-- Adobe DTM -->
+<script src="<?php echo $this->getDtmUrl() ?>"></script>
+<?php endif; ?>

@@ -1,0 +1,20 @@
+<?php
+    $_order = $this->getOrder(); 
+?>
+<div class="section allow active order-confirm-order-information">
+    <div class="step-title">
+        <h2><?php echo $this->__("Order Information"); ?></h2>
+    </div>
+    <div class="step-inner-wrap">
+        <div class="clearer">
+        <?php echo $this->getChild('success.order.billing')
+                ->setData('order', $_order)->toHtml(); ?>
+        <?php echo $this->getChild('success.order.shipping')
+                ->setData('order', $_order)->toHtml(); ?>
+        </div>
+        <?php echo $this->getChild('success.order.shipping.method')
+                ->setData('order', $_order)->toHtml(); ?>
+        <?php echo $this->getChild('success.order.payment')
+                ->setData('order', $_order)->toHtml(); ?>
+    </div>
+</div>

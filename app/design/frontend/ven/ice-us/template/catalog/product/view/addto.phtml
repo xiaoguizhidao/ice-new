@@ -1,0 +1,32 @@
+<?php $_product = $this->getProduct(); ?>
+<?php $_wishlistSubmitUrl = $this->helper('wishlist')->getAddUrl($_product); ?>
+
+<ul class="add-to-links">
+<?php //TODO: disabled for now ?>
+<?php //$email = Mage::getStoreConfig('contacts/email/recipient_email');
+$email = false;?>
+<?php if($email): ?>
+    <li><a href="mailto:<?php echo $email ?>" onclick="productAddToCartForm.submitLight(this, this.href); return false;" class="link-email"><?php echo $this->__('Email') ?></a></li>
+<?php endif; ?>
+
+<?php if ($this->helper('wishlist')->isAllow()) : ?>
+    <li><a href="<?php echo $_wishlistSubmitUrl ?>" onclick="productAddToCartForm.submitLight(this, this.href); return false;" class="link-wishlist"><?php echo $this->__('Wishlist') ?></a></li>
+<?php endif; ?>
+
+<?php if ($this->canEmailToFriend()): ?>
+    <li><a class="email-friend" href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><?php echo $this->__('Email to a Friend') ?></a></li>
+<?php endif; ?>
+
+<?php if($fb_like_html = $this->getChildHtml('facebook.like.product')): ?>
+    <li><?php echo $fb_like_html ?></li>
+<?php endif; ?>
+
+<?php if($twitter_like_html = $this->getChildHtml('twitter.like.product')): ?>
+    <li><?php echo $twitter_like_html ?></li>
+<?php endif; ?>
+
+<?php if($pi_like_html = $this->getChildHtml('pinit.like.product')): ?>
+    <li><?php echo $pi_like_html ?></li>
+<?php endif; ?>
+
+</ul>

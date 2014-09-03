@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Customy
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Customy EULA that is bundled with
+ * this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.customy.com/LICENSE-1.0.html
+ *
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@customy.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade the extension
+ * to newer versions in the future. If you wish to customize the extension
+ * for your needs please refer to http://www.customy.com/ for more information
+ * or send an email to sales@customy.com
+ *
+ * @copyright  Copyright (c) 2011-2013 Orot Technologies s.r.o.
+ * @license    http://www.customy.com/LICENSE-1.0.html
+ */
+ 
+ -->
+<config>
+	<modules>
+		<Customy_NewsletterRedirect>
+			<version>1.0.0</version>
+		</Customy_NewsletterRedirect>
+	</modules>
+	<global>
+		<helpers>
+			<newsletterredirect>
+				<class>Customy_NewsletterRedirect_Helper</class>
+			</newsletterredirect>
+		</helpers>
+		
+		<rewrite>
+            <Customy_NewsletterRedirect_Subscribe_New>
+                <from><![CDATA[#^/admin/customer_group/save#]]></from>
+                <to>extendedcustomergroups/customer_group/save</to>
+            </Customy_NewsletterRedirect_Subscribe_New>
+			
+			<Customy_NewsletterRedirect_Subscribe_New>
+                <from><![CDATA[#^/admin/customer_group/save#]]></from>
+                <to>extendedcustomergroups/customer_group/save</to>
+            </Customy_NewsletterRedirect_Subscribe_New>			
+        </rewrite>
+	</global>
+
+	<frontend>
+        <routers>
+			<newsletter>  
+				<args>  
+					<modules>  
+						<Customy_NewsletterRedirect before="Mage_Newsletter">Customy_NewsletterRedirect</Customy_NewsletterRedirect>  
+					</modules>  
+				</args>  
+			</newsletter>  
+			
+		</routers>
+	
+		
+		<translate>
+            <modules>
+                <Customy_NewsletterRedirect>
+                     <files>
+                          <default>Customy_NewsletterRedirect.csv</default>
+                     </files>
+                </Customy_NewsletterRedirect>
+            </modules>
+        </translate>
+	</frontend>
+
+	<default>
+        <newsletterredirect>
+    		<settings>
+    			<enabled>1</enabled>
+				<redirect_url><![CDATA[/]]></redirect_url>
+			</settings>    		
+   		</newsletterredirect>
+	</default>
+
+	<adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <newsletterredirect />
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+	</adminhtml>
+	
+</config>

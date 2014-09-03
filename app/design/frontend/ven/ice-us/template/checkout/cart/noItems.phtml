@@ -1,0 +1,12 @@
+<div class="cart">
+    <div class="page-title  title-buttons">
+        <h1><?php echo $this->__('You have %s items in your shopping bag', "<span>" . 0 . "</span>") ?></h1>
+    </div>
+    <div class="cart-empty">
+        <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+        <?php echo $this->getChildHtml('checkout_cart_empty_widget'); ?>
+        <span><?php echo $this->__('You have no items in your shopping cart.') ?></span>
+        <span><?php echo $this->__('Click <a href="%s">here</a> to continue shopping.', $this->getContinueShoppingUrl()) ?></span>
+        <?php echo $this->getChildHtml('shopping.cart.table.after'); ?>
+    </div>
+</div>

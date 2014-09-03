@@ -1,0 +1,19 @@
+<?php
+/**
+ * @category   Oro
+ * @package    Oro_Friends
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+
+/** @var Oro_Friends_Block_Customer_Program $this */
+?>
+<script src="//d3aa0ztdn3oibi.cloudfront.net/javascripts/ff.loyalty.widget.js" type="text/javascript"></script>
+<iframe id="ff_member_iframe" style="width:760px; height:1045px; border:0" frameBorder="0"></iframe>
+<script type='text/javascript'>
+    _ffLoyalty.initialize("<?php echo $this->getAccountId();?>");
+    _ffLoyalty.loadIframe(_fj.extend({
+        email:'<?php echo $this->getCustomer()->getData('email');?>',
+        auto_resize:true,
+        auth_token:'<?php echo $this->getAuthToken()?>'
+    }));
+</script>

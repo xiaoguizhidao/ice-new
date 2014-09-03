@@ -1,0 +1,15 @@
+<div id="viewblock_<?php echo $this->getAttachmentField()->getFieldname(); ?>">
+    <strong><?php echo nl2br(htmlentities($this->getValue())); ?></strong>
+</div>
+
+<div id="editblock_<?php echo $this->getAttachmentField()->getFieldname(); ?>" style="display: none;">
+    <input id="value_<?php echo $this->getAttachmentField()->getFieldname(); ?>" class="input-text" value="<?php echo htmlentities($this->getValue()); ?>" />
+    <div style="margin-top: 2px;">
+        <button class="button" type="button" onclick="javascript: attachSave('<?php echo $this->getAttachmentField()->getFieldname(); ?>');">
+            <span><span><?php echo $this->__('Save'); ?></span></span>
+        </button>
+        <button class="button" type="button" onclick="javascript: attachCancel('<?php echo $this->getAttachmentField()->getFieldname(); ?>');">
+            <span><span><?php echo $this->__('Cancel'); ?></span></span>
+        </button>
+    </div>
+</div>

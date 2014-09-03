@@ -1,0 +1,62 @@
+<?php
+/**
+ * aheadWorks Co.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ *
+ * =================================================================
+ *                 MAGENTO EDITION USAGE NOTICE
+ * =================================================================
+ * This software is designed to work with Magento community edition and
+ * its use on an edition other than specified is prohibited. aheadWorks does not
+ * provide extension support in case of incorrect edition use.
+ * =================================================================
+ *
+ * @category   AW
+ * @package    AW_AdvancedReviews
+ * @version    2.3.2
+ * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
+ * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
+ */
+?><?php $collection = $this->getCollection(); ?>
+<?php if($collection):?>
+<?php if($collection->getSize()):?>
+<ul class="product-reviews">
+<?php foreach ($collection as $_review):?>
+    <li class="product-review">
+        <?php $_votes = $this->getRatingVotes($_review->getId()); ?>
+        <?php if (count($_votes)): ?>
+            <span class="rating">
+               <?php foreach($_votes as $_vote): ?>
+                    <div class="rating-box">
+                        <div class="rating" style="width:<?php echo $_vote->getPercent() ?>%;"></div>
+                    </div>
+                <?php endforeach; ?>
+            </span>
+        <?php endif; ?>
+        <p class="review-title">
+            <a href="<?php echo $this->getReviewUrl($_review->getId()) ?>"><?php echo $this->htmlEscape($_review->getTitle()) ?></a>
+        </p>
+        <span class="review-meta">
+            <?php echo $this->__('Reviewd By %s on %s', $_review->getNickName(), $this->formatDate($_review->getCreatedAt(), 'long')) ?>
+        </span>
+        <p class="review-description"><?php echo $this->htmlEscape($_review->getDetail()); ?>
+        <span class="review-meta">
+        <?php
+            echo $this->getChild('advancedreviews_proscons_indicator')->setReviewId( $_review->getId() )->toHtml();
+            echo $this->getChild('advancedreviews_recommend_indicator')->setReviewId( $_review->getId() )->toHtml();
+            echo $this->getChild('advancedreviews_footer')->setReviewId( $_review->getId() )->toHtml();
+        ?>
+        </span>
+    </li>
+<?php endforeach; ?>
+</ul>
+<?php else: ?>
+        <?php echo $this->__('No reviews have been found');?>
+<?php endif;?>
+<?php endif;?>

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Customy
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Customy EULA that is bundled with
+ * this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.customy.com/LICENSE-1.0.html
+ *
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@customy.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade the extension
+ * to newer versions in the future. If you wish to customize the extension
+ * for your needs please refer to http://www.customy.com/ for more information
+ * or send an email to sales@customy.com
+ *
+ * @copyright  Copyright (c) 2011-2013 Orot Technologies s.r.o.
+ * @license    http://www.customy.com/LICENSE-1.0.html
+ */
+ 
+-->
+<config>
+    <tabs>
+        <customy translate="label">
+            <label>Customy extensions</label>
+            <sort_order>160</sort_order>
+        </customy>
+    </tabs>
+
+    <sections>
+        <newsletterredirect translate="label" module="newsletterredirect">
+            <label>Newsletter Redirect (v.1.0.0)</label>
+            <tab>customy</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>90</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <settings>
+                    <label>Newsletter Redirect Settings</label>
+                    <sort_order>700</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+						
+						<redirect_url translate="label comment">
+                            <label>Redirect URL</label>
+							<comment>Relative to Base URL path</comment>
+                            <frontend_type>text</frontend_type>
+							<validate>required-entry</validate>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </redirect_url>						
+                    </fields>
+                </settings>
+            </groups>
+        </newsletterredirect>
+    </sections>
+</config>

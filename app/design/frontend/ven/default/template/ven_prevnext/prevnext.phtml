@@ -1,0 +1,29 @@
+<?php
+/**
+ * @var $this Ven_PrevNext_Block_Prevnext
+ */
+
+$_prevLabel = $this->__("&lt; Previous Product");
+$_nextLabel = $this->__("Next Product &gt;");
+
+$_prev = $this->getPrevProductUrl();
+$_next = $this->getNextProductUrl();
+
+?>
+<div class="prevnext-nav">
+    <div class="prevnext-links">
+        <?php if ($_prev): ?>
+            <a href="<?php echo $_prev; ?>"><?php echo $_prevLabel; ?></a>
+        <?php else: ?>
+            <span><?php echo $_prevLabel; ?></span>
+        <?php endif; ?>
+
+        <p class="prevnext-separator">|</p>
+
+        <?php if ($_next): ?>
+            <a href="<?php echo $_next; ?>"><?php echo $_nextLabel; ?></a>
+        <?php else: ?>
+            <span><?php echo $_nextLabel; ?></span>
+        <?php endif; ?>
+    </div>
+</div>

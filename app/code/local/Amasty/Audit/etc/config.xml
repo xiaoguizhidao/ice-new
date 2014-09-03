@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<!--
+    Copyright (c) 2013 Amasty (http://www.amasty.com) 
+-->
+<config>
+    <modules>
+        <Amasty_Audit>
+            <version>1.0.0</version>
+        </Amasty_Audit>
+    </modules>
+    
+    <global>
+        <models>
+            <amaudit>
+                <class>Amasty_Audit_Model</class>
+                <resourceModel>amaudit_mysql4</resourceModel>
+            </amaudit>
+            
+            <amaudit_mysql4>
+                <class>Amasty_Audit_Model_Mysql4</class>
+                <entities>
+                    <data>
+                        <table>amasty_audit_data</table>
+                    </data> 
+                    <lock>
+                        <table>amasty_audit_lock</table>
+                    </lock> 
+                    <log>
+                        <table>amasty_audit_log</table>
+                    </log> 
+                    <log_details>
+                        <table>amasty_audit_log_details</table>
+                    </log_details> 
+                </entities>                
+            </amaudit_mysql4>           
+        </models>
+        
+        <events>
+         <admin_session_user_login_success>
+                <observers>
+                    <amaudit>
+                        <class>amaudit/lockobserver</class>
+                        <method>onAdminSessionUserLoginSuccess</method>
+                    </amaudit>
+                </observers>
+            </admin_session_user_login_success>
+            
+            <admin_session_user_login_failed>
+                <observers>
+                    <amaudit>
+                        <class>amaudit/lockobserver</class>
+                        <method>onAdminSessionUserLoginFailed</method>
+                    </amaudit>
+                </observers>
+            </admin_session_user_login_failed>
+            
+            
+            <controller_action_predispatch>
+                <observers>
+                    <amaudit>
+                        <class>amaudit/observer</class>
+                        <method>saveSomeEvent</method>
+                    </amaudit>
+                </observers>
+            </controller_action_predispatch>
+            
+            <model_save_before>
+                <observers>
+                    <amaudit>
+                        <class>amaudit/observer</class>
+                        <method>modelSaveDeleteBefore</method>
+                    </amaudit>
+                </observers>
+            </model_save_before>
+            
+            <model_save_after>
+                <observers>
+                    <amaudit>
+                        <class>amaudit/observer</class>
+                        <method>modelSaveAfter</method>
+                    </amaudit>
+                </observers>
+            </model_save_after>
+            
+            <model_delete_after>
+                <observers>
+                    <amaudit>
+                        <class>amaudit/observer</class>
+                        <method>modelDeleteAfter</method>
+                    </amaudit>
+                </observers>
+            </model_delete_after>
+        </events>
+        
+        <resources>
+            <amaudit_setup>
+                <setup>
+                    <module>Amasty_Audit</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </amaudit_setup>
+            <amaudit_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </amaudit_write>
+            <amaudit_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </amaudit_read>
+        </resources>
+
+        <blocks>
+            <amaudit>
+                <class>Amasty_Audit_Block</class>
+            </amaudit>
+        </blocks>
+         
+        <helpers>
+            <amaudit>
+                <class>Amasty_Audit_Helper</class>
+            </amaudit>
+        </helpers>
+    </global>
+    
+    <crontab>
+        <jobs>
+            <amaudit_delete>
+                <schedule><cron_expr>0 0 * * *</cron_expr></schedule>
+                <run><model>amaudit/observer::deleteLogs</model></run>
+            </amaudit_delete>
+        </jobs> 
+    </crontab>
+    
+    <admin>
+        <routers>
+			<amaudit>
+				<use>admin</use>
+				<args>
+					<module>Amasty_Audit</module>
+					<frontName>amaudit</frontName>
+				</args>
+			</amaudit>
+        </routers>
+    </admin> 
+        
+   <adminhtml>
+        
+   
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <amaudit translate="title" module="amaudit">
+                                            <title>Audit Log</title>
+                                </amaudit>
+                            </children>
+                        </system>
+                     </children>
+                </admin> 
+			</resources>
+		</acl>
+        <translate>
+            <modules>
+                <Amasty_Audit>
+                    <files>
+                        <default>Amasty_Audit.csv</default>
+                    </files>
+                </Amasty_Audit>
+            </modules>
+        </translate> 
+        
+        <layout>
+            <updates>
+                <amconf>
+                    <file>amaudit.xml</file>
+                </amconf>
+            </updates>
+        </layout>
+    </adminhtml>
+    
+     <default>
+        <amaudit>
+            <general>
+                <enableLock>1</enableLock>
+                <numberFailed>3</numberFailed>
+                <time>900</time>
+		<log_users>0,1</log_users>
+                <delete_logs_afret_days>90</delete_logs_afret_days>
+            </general>
+        </amaudit>
+    </default>
+</config>  

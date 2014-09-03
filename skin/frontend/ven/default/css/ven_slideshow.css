@@ -1,0 +1,30 @@
+/**
+ * Styles for ven_content/slideshow block
+ *
+ * @package Ven_Content
+ * @author  Andrey Legayev <andrey@ven.com>
+ */
+
+.ven_slideshow ul,
+.ven_slideshow li {
+    display: block;
+    list-style: none;
+}
+
+.ven_slideshow,
+.ven_slideshow ul {
+    position: relative;
+}
+
+.ven_slideshow li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ven_slideshow .ven_slideshow_buttons {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 20;
+}

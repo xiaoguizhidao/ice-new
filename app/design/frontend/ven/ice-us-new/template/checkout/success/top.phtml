@@ -1,0 +1,16 @@
+<?php if ($this->getOrderId()):?>
+    <?php
+        $_order = Mage::getModel('sales/order')->loadByIncrementId($this->getOrderId()); 
+    ?>
+    <?php if ($this->getCanViewOrder()) :?>
+        <h1><?php echo $this->__('Order # %s - Thank You For Your Purchase!', sprintf('<a href="%s">%s</a>', $this->escapeHtml($this->getViewOrderUrl()), $this->escapeHtml($this->getOrderId()))) ?></h1>
+
+    <?php  else :?>
+        <h1><?php echo $this->__('Order # %s - Thank You For Your Purchase!', $this->escapeHtml($this->getOrderId())) ?></h1>
+
+    <?php endif;?>
+
+    <p class="order-confirmation-message"><?php echo $this->__("An email confirmation has been sent to <strong>%s</strong>. If you don't receive this email, please call us at %s with in the next 24 hours.", $_order->getShippingAddress()->getEmail(), Mage::getStoreConfig('general/store_information/phone')) ?></p>
+    <p class="order-confirmation-message"><?php echo $this->__("Upon shipment out of our warehouse, you will receive an order shipment confirmation email. If you have any additoinal questions regarding your order, please contact us.") ?></p>
+
+<?php endif;?>

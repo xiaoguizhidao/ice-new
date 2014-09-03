@@ -1,0 +1,27 @@
+<div class="section active allow">
+	<div class="step-title">
+	  <h2><?php echo $this->__('Need Help?'); ?></h2>
+	</div>
+	<div class="help-phone">
+	  <span><?php echo $this->__('Order Now Toll-Free'); ?></span>
+	  <span class="phone-number">
+	  	<?php echo str_replace('Toll-Free', '',Mage::getStoreConfig('general/store_information/phone')); ?>
+	  </span>
+	</div>
+	<div class="helpful-links clearer">
+	  <ul>
+	    <li>
+	      <a target="_blank" href="<?php echo Mage::getUrl('customer-service/refunds/') ?>"><?php echo $this->__('Returns &amp; Refunds'); ?></a>
+	    </li>
+	    <li>
+	      <a target="_blank" href="<?php echo Mage::getUrl('customer-service/faq/') ?>"><?php echo $this->__('Warranty Info'); ?></a>
+	    </li>
+	    <li>
+	      <a target="_blank" href="<?php echo Mage::getUrl('customer-service/shipping-policy'); ?>"><?php echo $this->__('Shipping Policy'); ?></a>
+	    </li>
+	    <li>
+	      <a target="_blank" href="<?php echo Mage::getUrl('customer-service/contact-us'); ?>"><?php echo $this->__('Contact Us'); ?></a>
+	    </li>
+	  </ul>
+	</div>
+</div>

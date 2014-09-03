@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Oro
+ * @package    Oro_Friends
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+-->
+<config>
+    <modules>
+        <Oro_Friends>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Oro_Friends>
+    </modules>
+</config>

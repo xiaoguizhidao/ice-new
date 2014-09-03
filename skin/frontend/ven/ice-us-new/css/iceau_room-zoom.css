@@ -1,0 +1,194 @@
+/**
+ * RoomZoom.js Javascript Image Zoom Plugin for Prototype framework
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * DISCLAIMER
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ * * Redistributions of source code must retain the above copyright
+ * notice, this list of conditions and the following disclaimer.
+ * * Redistributions in binary form must reproduce the above copyright
+ * notice, this list of conditions and the following disclaimer in the
+ * documentation and/or other materials provided with the distribution.
+ * * Neither the name of the organization nor the
+ * names of its contributors may be used to endorse or promote products
+ * derived from this software without specific prior written permission.
+ *
+ * @category   design
+ * @package    RoomZoom.js
+ * @copyright  Copyright (C) 2012 Oggetto Web ltd (http://oggettoweb.com/)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Denis Obukhov <denis.obukhov@oggettoweb.com>
+ */
+
+ul#thumblist {
+    display: block;
+    padding-left: 0;
+}
+
+ul#thumblist li {
+    float: left;
+    margin-right: 2px;
+    list-style: none;
+}
+
+ul#thumblist li a {
+    display: block;
+    border: 1px solid #82c9f0;
+}
+
+ul#thumblist li a.zoomThumbActive {
+    border: 1px solid #198fd2;
+}
+
+.zoomPad {
+    cursor: default;
+    float: left;
+    position: relative;
+    z-index: 99;
+    margin-left: 15px;
+}
+
+.zoomPreload {
+    background-color: white;
+    background-image: url(../images/iceau_room-zoom/zoomloader.gif);
+    background-position: 43px 30px;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    color: #333333;
+    font-size: 12px;
+    height: 43px;
+    left: 0;
+    opacity: 0.8;
+    padding: 8px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    width: 90px;
+    z-index: 110;
+    display: none !important;
+}
+.zoomPup, #zoomPupbUna {
+    cursor: default;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1011;
+    background-color: #339ED4 !important;
+    border: 1px solid #093D75 !important;
+    -moz-opacity:.40;
+    filter:alpha(opacity=40);
+    opacity:.40;
+}
+
+.zoomPup img {
+    display: none !important;
+}
+
+.zoomPad {
+    clear: both;
+    float: none;
+}
+
+.zoomOverlay {
+    background: none repeat scroll 0 0 #fff;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 101;
+}
+.zoomWindow {
+    background: none repeat scroll 0 0 #fff;
+    height: auto;
+    left: 390px !important;
+    position: absolute;
+    top: 40px;
+    z-index: 110;
+}
+.zoomWrapper {
+    border: 1px solid #DEDEDE;
+    position: relative;
+    z-index: 110;
+
+    /* It doesn't work - Image alligned to left. Should be done in script. */
+    /*width: 370px !important;*/
+}
+.zoomWrapperTitle {
+    display: none !important;
+}
+.zoomWrapperImage {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 110;
+}
+.zoomWrapperImage img {
+    border: 0 none;
+    display: block;
+    position: absolute;
+    z-index: 101;
+}
+.zoomIframe {
+    display: block;
+    -moz-opacity:.80;
+    filter:alpha(opacity=80);
+    opacity:0.8;
+    position: absolute;
+    z-index: -1;
+}
+
+.zoomHint {
+    display: none;
+    position: absolute !important;
+    width: 55px;
+    height: 55px;
+    bottom: -61px !important;
+    right: 9px !important;
+    background: url(../images/iceau_room-zoom/btn-zoom.gif) bottom right no-repeat;
+    text-indent: -99999px;
+    z-index: 777;
+}
+.zoomHintEnable {
+    display: block !important;
+}
+._zoomHint {
+    display: none !important;
+}
+#outerImageContainer {
+    position: relative;
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+#imageContainer{ padding:0; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 5px; left: 5px; z-index: 10; height: 24px; display: block; }
+#hoverNav a{height: 24px; width:24px; margin:0 1px !important; overflow: hidden; float:left; background: transparent url(../images/iceau_room-zoom/buttons.png) no-repeat 0 0; }
+
+#hoverNav a#prevLink {background-position: 0 0;}
+#hoverNav a#nextLink { background-position: -24px 0;}
+#hoverNav a#prevLink:hover, #hoverNav a#prevLink:visited:hover { background-position: 0 -24px;}
+#hoverNav a#nextLink:hover, #hoverNav a#nextLink:visited:hover { background-position: -24px -24px;}
+#hoverNav a#closeLink{ background-position: -48px 0;}
+#hoverNav a#closeLink:hover, #hoverNav a#closeLink:visited:hover { background-position: -48px -24px; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }

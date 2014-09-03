@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Oro_Pricemultiplier>
+            <version>0.1.0</version>
+        </Oro_Pricemultiplier>
+    </modules>
+    <global>
+
+        <helpers>
+            <pricemultiplier>
+                <class>Oro_Pricemultiplier_Helper</class>
+            </pricemultiplier>
+        </helpers>
+    </global>
+    <default>
+        <pricemultiplier>
+            <settings>
+                <price_multiplier>1.5</price_multiplier>
+            </settings>
+        </pricemultiplier>
+    </default>
+</config> 

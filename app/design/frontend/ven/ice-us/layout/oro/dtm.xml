@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+		<!-- Adobe DTM -->
+		<reference name="head">
+			<block type="dtm/dtm_begin" name="dtm_begin" template="dtm/dtm_begin.phtml" />
+		</reference>
+		<reference name="before_body_end">
+			<block type="dtm/dtm_end" name="dtm_end" template="dtm/dtm_end.phtml" />
+		</reference>
+	</default>
+</layout>

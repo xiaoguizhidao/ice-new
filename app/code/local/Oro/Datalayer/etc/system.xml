@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <datalayer translate="label">
+            <label>DataLayer</label>
+            <tab>general</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>200</sort_order>
+            <show_in_default>0</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <settings translate="label">
+                    <label>General DataLayer Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>0</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <is_enabled translate="label comment">
+                            <label>DataLayer Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </is_enabled>
+                        <variable_name>
+                            <label>DataLayer JS Variable Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[
+								You can set a custom variable name if you run into naming conflicts
+							]]></comment>
+                        </variable_name>
+                        <internal_ip translate="label comment">
+                            <label>Internal IP Address Range</label>
+                            <comment><![CDATA[
+								Network ranges can be specified as:
+ 								1. Wildcard format:     1.2.3.*
+ 								2. CIDR format:         1.2.3/24  OR  1.2.3.4/255.255.255.0
+ 								3. Start-End IP format: 1.2.3.0-1.2.3.255
+ 								Blank for none]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </internal_ip>
+                    </fields>
+                </settings>
+            </groups>
+        </datalayer>
+    </sections>
+</config>

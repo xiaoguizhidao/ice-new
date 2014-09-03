@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Oro
+ * @package    Oro_Dataflow
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+-->
+<config>
+    <modules>
+        <Oro_Dataflow>
+            <active>false</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Dataflow/>
+            </depends>
+        </Oro_Dataflow>
+    </modules>
+</config>

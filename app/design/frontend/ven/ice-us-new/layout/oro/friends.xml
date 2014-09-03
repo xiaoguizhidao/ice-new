@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Oro
+ * @package    Oro_Friends
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+-->
+<layout version="0.1.0">
+    <customer_account>
+        <reference name="customer_account_navigation">
+            <action method="addLink" translate="label" module="oro_friends">
+                <name>loyalty_program</name>
+                <path>fhfriends</path>
+                <label>ICE Rewards</label>
+            </action>
+        </reference>
+    </customer_account>
+
+    <!--<customer_account>-->
+        <!--<reference name="after_body_start">-->
+            <!--<block type="oro_friends/event_record" name="event_record" template="oro/friends/record.phtml">-->
+                <!--<action method="setEventType">-->
+                    <!--<value>sitevisit</value>-->
+                <!--</action>-->
+            <!--</block>-->
+        <!--</reference>-->
+    <!--</customer_account>-->
+
+    <fhfriends_index_index>
+        <label>Customer My Account LoyaltyPlus Program Page</label>
+        <!-- Mage_Customer -->
+        <update handle="customer_account"/>
+        <reference name="my.account.wrapper">
+            <block type="oro_friends/customer_program" name="loyalty_program" template="oro/friends/program.phtml"/>
+        </reference>
+    </fhfriends_index_index>
+
+    <checkout_onepage_success>
+        <reference name="after_body_start">
+            <block type="oro_friends/event_record" name="event_record" template="oro/friends/record.phtml">
+                <action method="setEventType">
+                    <value>sitevisit</value>
+                </action>
+            </block>
+        </reference>
+    </checkout_onepage_success>
+</layout>

@@ -1,0 +1,824 @@
+<?xml version="1.0"?>
+<config>
+	<sections>
+		<recommender translate="label" module="recommender">
+			<label>Strands Recommender</label>
+			<class>strands_recommender-section</class>
+			<header_css>strands_recommender-header</header_css>			
+			<tab>sales</tab>
+			<frontend_type>text</frontend_type>
+            <sort_order>999</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+			<!-- Account credentials: Enable, API ID, Token and place user to open Strands Recommender account (see Feasible Block)-->
+			<groups>
+				<account translate="label" module="recommender">
+					<label>Account Credentials</label>
+					<frontend_type>text</frontend_type>
+					<expanded>1</expanded>
+					<sort_order>10</sort_order>
+					<show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+						<new>
+							<label>New</label>
+                            <frontend_type>text</frontend_type>
+                   			<frontend_model>recommender/adminhtml_system_config_fieldset_feasible</frontend_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</new>
+						<active>
+							<label>Enable</label>
+							<comment><![CDATA[Set to Yes to activate the Strands Recommender module]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</active>
+						<log>
+							<label>Log Api Calls</label>
+							<comment><![CDATA[Do no select yes unless instructed to by Strands Recommender Client Services]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+						</log>
+						<strands_api_id translate="label,comment">
+                            <label>Strands Recommender Customer API ID *</label>
+                            <comment><![CDATA[Strands API ID provided by Strands Recommender in the registration email]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </strands_api_id>
+						<strands_customer_token translate="label,comment">
+                            <label>Strands Recommender Customer Validation Token *</label>
+                            <comment><![CDATA[Strands Customer Validation Token provided by Strands Recommender in the registration email]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <default>patata</default>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </strands_customer_token>                        
+					</fields>
+				</account>
+			</groups>
+			<groups>
+				<widgets translate="label" module="recommender">
+					<label>Recommendation Widgets Settings</label>
+					<frontend_type>text</frontend_type>
+					<frontend_model>recommender/adminhtml_system_config_fieldset_widgets</frontend_model>
+					<expanded>0</expanded>
+					<sort_order>200</sort_order>
+					<show_in_default>0</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+					<fields>
+						<explanation>
+							<label>Explanation</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</explanation>
+						<automatic>
+							<label>Automatic insertion of widgets</label>
+							<comment><![CDATA[Check this if you want to automatically insert widgets in your site.]]></comment>
+                            <frontend_type>checkbox</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</automatic>
+					</fields>
+				</widgets>
+			</groups>
+			<!-- Catalog Extra Fields: Manage Stock-->
+			<groups>
+				<catalog-extra-fields translate="label" module="recommender">
+					<label>Catalog Extra Fields</label>
+					<frontend_type>text</frontend_type>
+					<expanded>0</expanded>
+					<sort_order>201</sort_order>
+					<show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+						<manage_stock>
+							<label>Manage Stock</label>
+							<comment><![CDATA[If set to Yes your catalog will include the following new fields on the Strands side: <b>manage_stock</b> informing of whether the item's stock is managed by you and <b>stock_qty</b> with up to date stock counts for each item. Please note that adding these fields will require extra lookups when synchronizing the catalog, causing some extra consumption of resources in your server.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>                          
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</manage_stock>
+					</fields>
+				</catalog-extra-fields>
+			</groups>
+			<!-- Tracking behavior: tracking via javascript-->
+			<groups>
+				<tracking translate="label" module="recommender">
+					<label>Tracking Behavior</label>
+					<frontend_type>text</frontend_type>
+					<expanded>0</expanded>
+					<sort_order>202</sort_order>
+					<show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+						<js_tracking>
+							<label>Tracking via JavaScript</label>
+							<comment><![CDATA[Set to Yes only in case you are using the Enterprise Edition and the Full Page Caching or if you are experiencing problems with tracking.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>                          
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</js_tracking>
+					</fields>
+				</tracking>
+			</groups>
+			
+			<groups>
+				<userlogged translate="label" module="recommender">
+					<label>Userlogged Event</label>
+					<frontend_type>text</frontend_type>
+					<expanded>0</expanded>
+					<sort_order>203</sort_order>
+					<show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+						<email_userid>
+							<label>Use e-mail address as user ID</label>
+							<comment><![CDATA[If set to Yes you will provide Strands Recommender the email addresses of any user logged in your system. Strands recommender will use this data to index user profiles for recommendations. If set to No, Magento's own user ID will be used instead.  ]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>                          
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</email_userid>
+						<via_js>
+							<label>Use JS to send "userlogged" event</label>
+							<comment><![CDATA[Set to "No" if you are experiencing problems with the "userlogged" event. In that case, "userlogged" event would be sent through API. ]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>                          
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</via_js>
+					</fields>
+				</userlogged>
+			</groups>
+			
+			
+			<groups>
+				<adding translate="label" module="recommender">
+					<label>Adding Recommentations to your Pages</label>
+					<comment>The exact placement of Recommendation widgets in your pages can be configured with the controls below.</comment>
+					<frontend_type>text</frontend_type>
+					<expanded>1</expanded>
+					<sort_order>205</sort_order>
+					<show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                    	<detection>
+                    		<label>Automatic detection of design</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>recommender/adminhtml_system_config_fieldset_designdetection</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                    	</detection>
+                    </fields>
+				</adding>
+			</groups>
+			<groups>
+				<widgets-design translate="label" module="recommender">
+					<label>Automatic Insertion Settings</label>
+					<comment>You need to let the Strands Recommender Module know what Magento Design Package and Themes you are using in your site. This configuration can be found under System > Configuration > Design. 
+							(If these fields are empty, it means you are using the default ones, so enter default in both Package and Themes) </comment>
+					<frontend_type>text</frontend_type>
+					<expanded>0</expanded>
+					<sort_order>210</sort_order>
+					<show_in_default>0</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+					<fields>
+						<package>
+							<label>Package</label>
+							<comment><![CDATA[Enter here your current Package Name. It can be found in the Magento Dashboard under System > Configuration > General > Design > Package]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</package>
+						<themes>
+							<label>Themes</label>
+							<comment><![CDATA[Enter here your current Themes. It can be found in the Magento Dashboard under System > Configuration > General > Design > Themes]]></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</themes>
+					</fields>
+				</widgets-design>
+			</groups>
+			<!-- Homepage widgets : insert option (see Insertion Model), tips and explanations (see Insertionmode block)-->
+			<groups>
+				<widgets-homepage translate="label" module="recommender">
+					<label>Homepage Widgets</label>
+					<frontend_type>text</frontend_type>
+					<expanded>0</expanded>
+					<sort_order>220</sort_order>
+					<show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+						<active>
+							<label>Insert widgets in homepage</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>recommender/insertion</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</active>
+						<structural>
+							<label>Structural Block</label>
+							<comment>Structural block where the widget will be inserted. If empty, the widget will be inserted before the body end.</comment>
+							<frontend_type>text</frontend_type>
+							<tooltip>The following Structural Blocks should be available in most layouts: top.menu, left, right, content, footer, after_body_start, before_body_end.</tooltip>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</structural>
+						<position>
+							<label>Relative position</label>
+							<comment><![CDATA[Relative position respect to the block above]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>Depending on your Magento shop version, this setting might not work and the widgets would be placed after the specified Block.</tooltip>
+                            <source_model>recommender/beforeafter</source_model>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</position>
+						<block>
+							<label>Block</label>
+							<comment>The widget will be inserted after or before this Block. If empty, the widget will be inserted at the end of the Structural Block.</comment>
+							<frontend_type>text</frontend_type>
+							<tooltip>If you don't know which Blocks are present in your site refer to...</tooltip>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</block>
+						<file>
+							<label>Explanation file</label>
+							<frontend_type>select</frontend_type>
+							<frontend_model>recommender/adminhtml_system_config_fieldset_insertionmode</frontend_model>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</file>
+						<cms>
+							<label>Explanation cms</label>
+							<frontend_type>select</frontend_type>
+							<frontend_model>recommender/adminhtml_system_config_fieldset_insertionmode</frontend_model>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cms>
+					</fields>
+				</widgets-homepage>
+			</groups>
+			<!-- Product widgets -->
+			<groups>
+				<widgets-product translate="label" module="recommender">
+					<label>Product Widgets</label>
+					<frontend_type>text</frontend_type>
+					<expanded>0</expanded>
+					<sort_order>230</sort_order>
+					<show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+						<active>
+							<label>Insert widgets in product pages</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>recommender/insertion</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</active>
+						<structural>
+							<label>Structural Block</label>
+							<comment>Structural block where the widget will be inserted. If empty, the widget will be inserted before the body end.</comment>
+							<frontend_type>text</frontend_type>
+							<tooltip>The following Structural Blocks should be available in most layouts: top.menu, left, right, content, footer, after_body_start, before_body_end.</tooltip>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</structural>
+						<position>
+							<label>Relative position</label>
+							<comment><![CDATA[Relative position respect to the block above]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>Depending on your Magento shop version, this setting might not work and the widgets would be placed after the specified Block.</tooltip>
+                            <source_model>recommender/beforeafter</source_model>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</position>
+						<block>
+							<label>Block</label>
+							<comment>The widget will be inserted after or before this Block. If empty, the widget will be inserted at the end of the Structural Block.</comment>
+							<frontend_type>text</frontend_type>
+							<tooltip>If you don't know which Blocks are present in your site refer to...</tooltip>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</block>
+						<file>
+							<label>Explanation file</label>
+							<frontend_type>select</frontend_type>
+							<frontend_model>recommender/adminhtml_system_config_fieldset_insertionmode</frontend_model>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</file>
+						<cms>
+							<label>Explanation cms</label>
+							<frontend_type>select</frontend_type>
+							<frontend_model>recommender/adminhtml_system_config_fieldset_insertionmode</frontend_model>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cms>
+					</fields>
+				</widgets-product>
+			</groups>
+			<!-- Category widgets -->
+			<groups>
+				<widgets-category translate="label" module="recommender">
+					<label>Category Widgets</label>
+					<frontend_type>text</frontend_type>
+					<expanded>0</expanded>
+					<sort_order>240</sort_order>
+					<show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+						<active>
+							<label>Insert widgets in category pages</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>recommender/insertion</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</active>
+						<structural>
+							<label>Structural Block</label>
+							<comment>Structural block where the widget will be inserted. If empty, the widget will be inserted before the body end.</comment>
+							<frontend_type>text</frontend_type>
+							<tooltip>The following Structural Blocks should be available in most layouts: top.menu, left, right, content, footer, after_body_start, before_body_end.</tooltip>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</structural>
+						<position>
+							<label>Relative position</label>
+							<comment><![CDATA[Relative position respect to the block above]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>Depending on your Magento shop version, this setting might not work and the widgets would be placed after the specified Block.</tooltip>
+                            <source_model>recommender/beforeafter</source_model>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</position>
+						<block>
+							<label>Block</label>
+							<comment>The widget will be inserted after or before this Block. If empty, the widget will be inserted at the end of the Structural Block.</comment>
+							<frontend_type>text</frontend_type>
+							<tooltip>If you don't know which Blocks are present in your site refer to...</tooltip>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</block>
+						<file>
+							<label>Explanation file</label>
+							<frontend_type>select</frontend_type>
+							<frontend_model>recommender/adminhtml_system_config_fieldset_insertionmode</frontend_model>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</file>
+						<cms>
+							<label>Explanation cms</label>
+							<frontend_type>select</frontend_type>
+							<frontend_model>recommender/adminhtml_system_config_fieldset_insertionmode</frontend_model>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cms>
+					</fields>
+				</widgets-category>
+			</groups>
+			<!-- Cart Widgets -->
+			<groups>
+				<widgets-cart translate="label" module="recommender">
+					<label>Cart Widgets</label>
+					<frontend_type>text</frontend_type>
+					<expanded>0</expanded>
+					<sort_order>250</sort_order>
+					<show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+						<active>
+							<label>Insert widgets in cart pages</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>recommender/insertion</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</active>
+						<structural>
+							<label>Structural Block</label>
+							<comment>Structural block where the widget will be inserted. If empty, the widget will be inserted before the body end.</comment>
+							<frontend_type>text</frontend_type>
+							<tooltip>The following Structural Blocks should be available in most layouts: top.menu, left, right, content, footer, after_body_start, before_body_end.</tooltip>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</structural>
+						<position>
+							<label>Relative position</label>
+							<comment><![CDATA[Relative position respect to the block above]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>Depending on your Magento shop version, this setting might not work and the widgets would be placed after the specified Block.</tooltip>
+                            <source_model>recommender/beforeafter</source_model>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</position>
+						<block>
+							<label>Block</label>
+							<comment>The widget will be inserted after or before this Block. If empty, the widget will be inserted at the end of the Structural Block.</comment>
+							<frontend_type>text</frontend_type>
+							<tooltip>If you don't know which Blocks are present in your site refer to...</tooltip>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</block>
+						<file>
+							<label>Explanation file</label>
+							<frontend_type>select</frontend_type>
+							<frontend_model>recommender/adminhtml_system_config_fieldset_insertionmode</frontend_model>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</file>
+						<cms>
+							<label>Explanation cms</label>
+							<frontend_type>select</frontend_type>
+							<frontend_model>recommender/adminhtml_system_config_fieldset_insertionmode</frontend_model>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cms>
+					</fields>
+				</widgets-cart>
+			</groups>
+			<!-- Checkout widgets -->
+			<groups>
+				<widgets-checkout translate="label" module="recommender">
+					<label>Checkout Widgets</label>
+					<frontend_type>text</frontend_type>
+					<expanded>0</expanded>
+					<sort_order>260</sort_order>
+					<show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+						<active>
+							<label>Insert widgets in checkout pages</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>recommender/insertion</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</active>
+						<structural>
+							<label>Structural Block</label>
+							<comment>Structural block where the widget will be inserted. If empty, the widget will be inserted before the body end.</comment>
+							<frontend_type>text</frontend_type>
+							<tooltip>The following Structural Blocks should be available in most layouts: top.menu, left, right, content, footer, after_body_start, before_body_end.</tooltip>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</structural>
+						<position>
+							<label>Relative position</label>
+							<comment><![CDATA[Relative position respect to the block above]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>Depending on your Magento shop version, this setting might not work and the widgets would be placed after the specified Block.</tooltip>
+                            <source_model>recommender/beforeafter</source_model>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</position>
+						<block>
+							<label>Block</label>
+							<comment>The widget will be inserted after or before this Block. If empty, the widget will be inserted at the end of the Structural Block.</comment>
+							<frontend_type>text</frontend_type>
+							<tooltip>If you don't know which Blocks are present in your site refer to...</tooltip>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</block>
+						<file>
+							<label>Explanation file</label>
+							<frontend_type>select</frontend_type>
+							<frontend_model>recommender/adminhtml_system_config_fieldset_insertionmode</frontend_model>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</file>
+						<cms>
+							<label>Explanation cms</label>
+							<frontend_type>select</frontend_type>
+							<frontend_model>recommender/adminhtml_system_config_fieldset_insertionmode</frontend_model>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cms>
+					</fields>
+				</widgets-checkout>
+			</groups>
+			<!-- Configuring your recommendations: Link to "look and feel" in the dashboard (see Lookandfeel Block) -->
+			<groups>
+				<lookandfeel translate="label" module="recommender">
+					<label>Configuring your Recommentations</label>
+					<frontend_type>text</frontend_type>
+					<expanded>1</expanded>
+					<sort_order>280</sort_order>
+					<show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                    	<detection>
+                    		<label>Look and feel explanation</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>recommender/adminhtml_system_config_fieldset_lookandfeel</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                    	</detection>
+                    </fields>
+				</lookandfeel>
+			</groups>
+			<!-- Catalog sync : sync option (see Cronfeed Model), tips and explanations (see Feasible Block) -->
+			<groups>
+				<catalog translate="label" module="recommender">
+					<label>Catalog Sync</label>
+					<frontend_type>text</frontend_type>
+					<expanded>1</expanded>
+					<sort_order>30</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<select>
+							<label>Choose an option to synchronize your catalog with Strands Recommender</label>
+							<comment><![CDATA[If possible, use "automatic catalog feed".]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>recommender/cronfeed</source_model>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</select>
+						<feed_feasible>
+							<label>Feasible</label>
+							<comment><![CDATA[This says if it is possible to use cron]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_model>recommender/adminhtml_system_config_fieldset_feasible</frontend_model>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</feed_feasible>
+						<cron_feasible>
+							<label>Feasible</label>
+							<comment><![CDATA[This says if it is possible to use cron]]></comment>
+							<frontend_type>text</frontend_type>
+							<frontend_model>recommender/adminhtml_system_config_fieldset_feasible</frontend_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</cron_feasible>
+						<strands_catalog_time translate="label,comment">
+                            <label>Last catalog upload</label>
+                            <comment><![CDATA[Shows the time when the last catalog was successfully uploaded to Strands Recommender (DO NOT FILL!)]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>recommender/adminhtml_system_config_fieldset_feasible</frontend_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </strands_catalog_time>
+						<cron_explanation translate="label,comment">
+                            <label>Explanation for cron</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>recommender/adminhtml_system_config_fieldset_feasible</frontend_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cron_explanation>
+						<feed_explanation translate="label,comment">
+                            <label>Explanation for feed</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>recommender/adminhtml_system_config_fieldset_feasible</frontend_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </feed_explanation>
+						<manual_explanation translate="label,comment">
+                            <label>Explanation for manual</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>recommender/adminhtml_system_config_fieldset_feasible</frontend_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </manual_explanation>
+					</fields>
+				</catalog>
+			</groups>
+			<!-- Settings for catalog upload WITH cron: username, passwd, scheduled upload time and "upload catalog now" -->
+			<groups>
+				<cron translate="label" module="recommender">
+					<label>Settings for catalog upload WITH cron</label>
+					<frontend_type>text</frontend_type>
+					<expanded>1</expanded>
+					<sort_order>40</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<help translate="label,comment">
+							<label>Help with Cron</label>
+							<frontend_type>text</frontend_type>
+							<frontend_model>recommender/adminhtml_system_config_fieldset_feasible</frontend_model>
+							<sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</help>
+						<strands_login translate="label,comment">
+                            <label>Strands Recommender Username</label>
+                            <comment><![CDATA[Strands Recommender Username, setup during registration at Strands Recommender]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </strands_login>
+						<strands_password translate="label,comment">
+							<label>Strands Recommender Password</label>
+							<comment><![CDATA[Strands Recommender password, setup during registration at Strands Recommender]]></comment>
+							<frontend_type>password</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</strands_password>       
+						<strands_desired_catalog_time translate="label,comment">
+                            <label>Time to upload catalog</label>
+                            <comment><![CDATA[Select the local time when you want your catalog to be uploaded to Strands Recommender (daily)]]></comment>
+                            <frontend_type>time</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</strands_desired_catalog_time>
+				        <strands_catalog_upload_now translate="label,comment">
+                        	<label>Upload catalog now</label>
+                        	<comment><![CDATA[Select Yes if you want your catalog to be uploaded once when this configuration is saved]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        	<sort_order>40</sort_order>
+                        	<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </strands_catalog_upload_now>
+                       	<last_cron_action translate="label,comment">
+                        	<label>Last time cron was active</label>
+                        	<comment><![CDATA[Indicates the last time]]></comment>
+                            <frontend_type>text</frontend_type>
+                        	<sort_order>50</sort_order>
+                        	<show_in_default>0</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </last_cron_action>
+                	</fields>
+				</cron>
+			</groups>
+			<!-- Settings for manual catalog upload: username, passwd and upload button (see Manualupload Block)-->
+			<groups>
+				<manual translate="label" module="recommender">
+					<label>Settings for manual catalog upload</label>
+					<frontend_type>text</frontend_type>
+					<expanded>1</expanded>
+					<sort_order>50</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<strands_login translate="label,comment">
+                            <label>Strands Recommender Username</label>
+                            <comment><![CDATA[Strands Recommender Username, setup during registration at Strands Recommender]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </strands_login>
+						<strands_password translate="label,comment">
+							<label>Strands Recommender Password</label>
+							<comment><![CDATA[Strands Recommender password, setup during registration at Strands Recommender]]></comment>
+							<frontend_type>password</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</strands_password>       
+                       	<direct>
+							<label>Upload catalog now</label>
+							<comment><![CDATA[A new window will be opened to upload your catalog. Please do not close it until it is completely loaded!]]></comment>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>recommender/manualupload</frontend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</direct>
+                	</fields>
+				</manual>
+			</groups>
+		</recommender>
+	</sections>
+</config>	

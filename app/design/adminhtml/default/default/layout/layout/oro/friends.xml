@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Oro
+ * @package    Oro_Friends
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+-->
+<layout>
+    <adminhtml_promo_quote_edit>
+        <reference name="promo_quote_edit_tabs">
+            <block type="oro_friends/adminhtml_promo_quote_edit_tab_import" name="import_tab"/>
+            <action method="addTab">
+                <id>import_tab</id>
+                <block>import_tab</block>
+            </action>
+        </reference>
+    </adminhtml_promo_quote_edit>
+    <adminhtml_oro_friends_promo_coupon_edit>
+        <reference name="content">
+            <block type="oro_friends/adminhtml_promo_quote_coupon_edit" name="promo_quote_coupon_edit" />
+        </reference>
+    </adminhtml_oro_friends_promo_coupon_edit>
+</layout>

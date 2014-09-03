@@ -1,0 +1,49 @@
+<?php 
+    $_payment  = $this->getOrder()->getPayment();
+?>
+<?php switch($_payment->getMethod()):
+    case 'cashondelivery': ?>
+        <table class="order-information payment-information">
+        <tr>
+            <th>Payment Method</th>
+            <td><?php echo  $_payment->getMethodInstance()->getTitle() ?> </td>
+         </tr>
+    </table>
+    <?php 
+    case 'affirm': ?>
+        <table class="order-information payment-information">
+            <tr>
+                <th>Payment Method</th>
+                <td>Affirm</td>
+             </tr>
+        </table>
+    <?php
+        break;
+        default:
+            $_ccTypes = Mage::getSingleton('payment/config')->getCcTypes();
+            if(is_object($_payment->getMethodInstance()->getCardsStorage())):
+
+                $_cards = $_payment->getMethodInstance()->getCardsStorage()->getCards();
+                foreach($_cards as $_key => $_card):
+                    $_ccType = $_card->getCcType();
+        ?>
+            <table class="order-information payment-information">
+                <tbody>
+                    <tr>
+                        <th>Card Type:</th>
+                        <th>Expires:</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <?php if(isset($_ccTypes[$_ccType])): ?> <?php echo $_ccTypes[$_ccType]?>:<?php endif; ?>XXXX-XXXX-XXXX-<?php echo $_card->getCcLast4(); ?>
+                        </td>
+                        <td>
+                            <?php echo $_card->getCcExpMonth(); ?>/<?php echo $_card->getCcExpYear(); ?>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    <?php break; ?>
+<?php endswitch; ?>

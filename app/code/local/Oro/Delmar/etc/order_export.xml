@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+    <field>
+        <name>Merchant ID</name>
+        <type>const</type>
+        <action>ICE US</action>
+    </field>
+    <field>
+        <name>Order Number</name>
+        <type>order</type>
+        <action>increment_id</action>
+    </field>
+    <field>
+        <name>Order Date</name>
+        <type>order</type>
+        <action>_getOrderDate</action>
+    </field>
+    <field>
+        <name>Description</name>
+        <type>item</type>
+        <action>name</action>
+    </field>
+    <field>
+        <name>Vendor SKU</name>
+        <type>item</type>
+        <action>vendor_sku</action>
+    </field>
+    <field>
+        <name>Merchant SKU</name>
+        <type>item</type>
+        <action>sku</action>
+    </field>
+    <field>
+        <name>Size</name>
+        <type>item</type>
+        <action>_getRingSize</action>
+    </field>
+    <field>
+        <name>Unit Price</name>
+        <type>parent_item</type>
+        <action>price</action>
+    </field>
+    <field>
+        <name>Quantity</name>
+        <type>item</type>
+        <action>_getQty</action>
+    </field>
+    <field>
+        <name>Name</name>
+        <type>address</type>
+        <action>name</action>
+    </field>
+    <field>
+        <name>Address1</name>
+        <type>address</type>
+        <action>street</action>
+        <param>1</param>
+    </field>
+    <field>
+        <name>Address2</name>
+        <type>address</type>
+        <action>street</action>
+        <param>2</param>
+    </field>
+    <field>
+        <name>City</name>
+        <type>address</type>
+        <action>city</action>
+    </field>
+    <field>
+        <name>State</name>
+        <type>address</type>
+        <action>region_code</action>
+    </field>
+    <field>
+        <name>Country</name>
+        <type>address</type>
+        <action>country_id</action>
+    </field>
+    <field>
+        <name>Zip</name>
+        <type>address</type>
+        <action>postcode</action>
+    </field>
+    <field>
+        <name>Phone</name>
+        <type>address</type>
+        <action>telephone</action>
+    </field>
+    <field>
+        <name>Service Type</name>
+        <type>order</type>
+        <action>_getServiceType</action>
+    </field>
+    <field>
+        <name>GiftMessage</name>
+        <type>order</type>
+        <action>gift_message</action>
+    </field>
+    <field>
+        <name>Tax Amount</name>
+        <type>parent_item</type>
+        <action>tax_amount</action>
+    </field>
+    <field>
+        <name>Tax Percentage</name>
+        <type>parent_item</type>
+        <action>tax_percent</action>
+    </field>
+    <field>
+        <name>Discount amount</name>
+        <type>parent_item</type>
+        <action>discount_amount</action>
+    </field>
+    <field>
+        <name>Subtotal</name>
+        <type>parent_item</type>
+        <action>price</action>
+    </field>
+    <field>
+        <name>Row Total</name>
+        <type>parent_item</type>
+        <action>row_total</action>
+    </field>
+    <field>
+        <name>Shipping fee</name>
+        <type>order</type>
+        <action>shipping_amount</action>
+    </field>
+    <field>
+        <name>Shipping tax</name>
+        <type>order</type>
+        <action>shipping_tax_amount</action>
+    </field>
+    <field>
+        <name>Total due</name>
+        <type>order</type>
+        <action>grand_total</action>
+    </field>
+</order>

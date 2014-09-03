@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   QS
+ * @package    QS_BridgeChannelAdvisor
+ * @copyright  Copyright (c) 2013 QuartSoft (http://www.quartsoft.com)
+ */
+-->
+<config>
+    <modules>
+        <QS_BridgeChannelAdvisor>
+            <version>0.1.25</version>
+        </QS_BridgeChannelAdvisor>
+    </modules>
+    <crontab>
+        <jobs>
+            <bridgechanneladvisor_import_products>
+                <schedule><cron_expr>*/5 * * * * </cron_expr></schedule>
+                <run><model>bridgechanneladvisor/camage::checkProfile</model></run>
+            </bridgechanneladvisor_import_products>
+            <bridgechanneladvisor_update_products>
+                <schedule><cron_expr>0 0 * * * </cron_expr></schedule>
+                <run><model>bridgechanneladvisor/camage::updateProductsData</model></run>
+            </bridgechanneladvisor_update_products>
+            <bridgechanneladvisor_update_products_qty>
+                <schedule><cron_expr>*/10 * * * * </cron_expr></schedule>
+                <run><model>bridgechanneladvisor/camage::updateProductsQty</model></run>
+            </bridgechanneladvisor_update_products_qty>
+            <bridgechanneladvisor_import_orders>
+                <schedule><cron_expr>0 */4 * * * </cron_expr></schedule>
+                <run><model>bridgechanneladvisor/camage::importOrders</model></run>
+            </bridgechanneladvisor_import_orders>
+            <bridgechanneladvisor_sync_process_rebirth>
+                <schedule><cron_expr>*/5 * * * * </cron_expr></schedule>
+                <run><model>bridgechanneladvisor/camage::runAgain</model></run>
+            </bridgechanneladvisor_sync_process_rebirth>
+            <bridgechanneladvisor_export_products>
+                <schedule><cron_expr>*/5 * * * * </cron_expr></schedule>
+                <run><model>bridgechanneladvisor/mageca::checkProfile</model></run>
+            </bridgechanneladvisor_export_products>
+            <bridgechanneladvisor_errornotify_deletealldata>
+                <schedule><cron_expr>0 0 * * 1 </cron_expr></schedule>
+                <run><model>bridgechanneladvisor/errornotify::deleteAllData</model></run>
+            </bridgechanneladvisor_errornotify_deletealldata>
+            <bridgechanneladvisor_observer_sendemailerror>
+                <schedule><cron_expr>0 */3 * * * </cron_expr></schedule>
+                <run><model>bridgechanneladvisor/observer::sendEmailError</model></run>
+            </bridgechanneladvisor_observer_sendemailerror>
+            <bridgechanneladvisor_check_cron_settings>
+                <schedule><cron_expr>*/1 * * * * </cron_expr></schedule>
+                <run><model>bridgechanneladvisor/observer::checkCronSettings</model></run>
+            </bridgechanneladvisor_check_cron_settings>
+
+            <bridgechanneladvisor_check_recurring_profile>
+                <schedule><cron_expr>00 00 * * * </cron_expr></schedule>
+                <run><model>bridgechanneladvisor/camage::recProfile</model></run>
+            </bridgechanneladvisor_check_recurring_profile>
+        </jobs>
+    </crontab>
+    <global>
+        <models>
+            <bridgechanneladvisor>
+                <class>QS_BridgeChannelAdvisor_Model</class>
+                <resourceModel>bridgechanneladvisor_mysql4</resourceModel>
+            </bridgechanneladvisor>
+            <bridgechanneladvisor_mysql4>
+                <class>QS_BridgeChannelAdvisor_Model_Mysql4</class>
+                <entities>
+                    <category>
+                        <table>channel_categories</table>
+                    </category>
+                    <attribute>
+                        <table>channel_attributes</table>
+                    </attribute>
+                    <relation>
+                        <table>channel_relations</table>
+                    </relation>
+                    <types>
+                        <table>channel_types</table>
+                    </types>
+                    <items>
+                        <table>channel_items</table>
+                    </items>
+                    <pair>
+                        <table>channel_pair_attributes</table>
+                    </pair>
+                    <settings>
+                        <table>channel_settings</table>
+                    </settings>
+                    <ship>
+                        <table>channel_ship</table>
+                    </ship>
+                    <shiptype>
+                        <table>channel_ship_types</table>
+                    </shiptype>
+                    <errornotify>
+                        <table>channel_email</table>
+                    </errornotify>
+                    <errorname>
+                        <table>channel_sub_email</table>
+                    </errorname>
+                    <prepareitem>
+                        <table>channel_prepare_items</table>
+                    </prepareitem>
+                    <dynamicconfigs>
+                        <table>channel_dynamic_configs</table>
+                    </dynamicconfigs>
+                    <relationships>
+                        <table>channel_variation_relationships</table>
+                    </relationships>
+                </entities>
+            </bridgechanneladvisor_mysql4>
+        </models>
+        <resources>
+        	<bridgechanneladvisor_setup>
+                <setup>
+                    <module>QS_BridgeChannelAdvisor</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+        	</bridgechanneladvisor_setup>
+            <bridgechanneladvisor_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </bridgechanneladvisor_write>
+        	<bridgechanneladvisor_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+        	</bridgechanneladvisor_read>
+        </resources>
+		<blocks>
+			<bridgechanneladvisor>
+				<class>QS_BridgeChannelAdvisor_Block</class>
+			</bridgechanneladvisor>
+
+            <adminhtml>
+                <rewrite>
+                    <sales_order_shipment_view_form>QS_BridgeChannelAdvisor_Block_Adminhtml_Sales_Order_Shipment_View_Form</sales_order_shipment_view_form>
+                </rewrite>
+            </adminhtml>
+
+		</blocks>
+        <helpers>
+            <bridgechanneladvisor>
+                <class>QS_BridgeChannelAdvisor_Helper</class>
+            </bridgechanneladvisor>
+        </helpers>
+        <template>
+           <email>
+               <bridgechanneladvisor_importemail_email_template translate="label" module="bridgechanneladvisor">
+                  <label>Notification</label>
+                  <file>bridgechanneladvisor/notification.html</file>
+                  <type>html</type>
+               </bridgechanneladvisor_importemail_email_template>
+           </email>
+        </template>
+        <events>
+            <cataloginventory_stock_item_save_after>
+                <observers>
+                    <bridgechanneladvisor>
+                        <class>bridgechanneladvisor/mageca</class>
+                        <method>updateChannelAdvisorProductData</method>
+                        <!--method>updateChannelAdvisorQty</method-->
+                    </bridgechanneladvisor>
+                </observers>
+            </cataloginventory_stock_item_save_after>
+            <sales_order_place_after>
+                <observers>
+                    <bridgechanneladvisor>
+                        <class>bridgechanneladvisor/mageca</class>
+                        <method>updateChannelAdvisorQtyOrderPlace</method>
+                    </bridgechanneladvisor>
+                </observers>
+            </sales_order_place_after>
+            <sales_order_creditmemo_save_after>
+                <observers>
+                    <bridgechanneladvisor>
+                        <class>bridgechanneladvisor/mageca</class>
+                        <method>updateChannelAdvisorQtyOrderRefund</method>
+                    </bridgechanneladvisor>
+                </observers>
+            </sales_order_creditmemo_save_after>
+            <sales_order_save_after>
+                <observers>
+                    <bridgechanneladvisor>
+                        <class>bridgechanneladvisor/mageca</class>
+                        <method>exportOrder</method>
+                    </bridgechanneladvisor>
+                </observers>
+            </sales_order_save_after>
+            <admin_session_user_login_success>
+                <observers>
+                    <bridgechanneladvisor>
+                        <class>QS_BridgeChannelAdvisor_Model_Observer</class>
+                        <method>adminSessionUserLoginSuccess</method>
+                    </bridgechanneladvisor>
+                </observers>
+            </admin_session_user_login_success>
+        </events>
+    </global>
+    <admin>
+        <routers>
+            <bridgechanneladvisor_admin>
+                <use>admin</use>
+                <args>
+                    <module>QS_BridgeChannelAdvisor</module>
+                    <frontName>bridgechanneladvisor</frontName>
+                </args>
+            </bridgechanneladvisor_admin>
+        </routers>
+    </admin>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <catalog>
+                            <children>
+                                <bridgechanneladvisor translate="title" module="bridgechanneladvisor">
+                                    <title>QS ChannelAdvisor</title>
+                                    <children>
+                                          <attributes translate="title" module="bridgechanneladvisor">
+                                            <title>Upload Data from CA</title>
+                                        </attributes>
+                                        <types translate="title" module="bridgechanneladvisor">
+                                            <title>Manage Attributes</title>
+                                        </types>
+                                        <items translate="title" module="bridgechanneladvisor">
+                                            <title>Manage Items</title>
+                                        </items>
+                                        <prepareitems translate="title" module="bridgechanneladvisor">
+                                            <title>Manage Items for Export</title>
+                                        </prepareitems>
+                                        <shipment translate="title" module="bridgechanneladvisor">
+                                            <title>Manage ChannelAdvisor Shipping Methods</title>
+                                        </shipment>
+                                        <profile translate="title" module="bridgechanneladvisor">
+                                            <title>Manage Profile</title>
+                                        </profile>
+                                        <errornotify translate="title" module="bridgechanneladvisor">
+                                            <title>Manage Message</title>
+                                        </errornotify>
+                                    </children>
+                                </bridgechanneladvisor>
+                            </children>
+                        </catalog>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <bridgechanneladvisor translate="title" module="bridgechanneladvisor">
+                                            <title>QS ChannelAdvisor</title>
+                                        </bridgechanneladvisor>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <menu>
+        	<catalog>
+        		<children>
+        			<bridgechanneladvisor translate="title" module="bridgechanneladvisor">
+                        <title>QS ChannelAdvisor</title>
+                        <sort_order>70</sort_order>
+                        <children>
+                            <attributes translate="title" module="bridgechanneladvisor">
+                                <title>Upload Data from CA</title>
+                                <sort_order>10</sort_order>
+                                <action>bridgechanneladvisor/adminhtml_attributes</action>
+                            </attributes>
+                            <types translate="title" module="bridgechanneladvisor">
+                                <title>Manage Attributes</title>
+                                <sort_order>20</sort_order>
+                                <action>bridgechanneladvisor/adminhtml_types</action>
+                            </types>
+                            <items translate="title" module="bridgechanneladvisor">
+                                <title>Manage Items</title>
+                                <sort_order>30</sort_order>
+                                <action>bridgechanneladvisor/adminhtml_items</action>
+                            </items>
+                            <prepareitems translate="title" module="bridgechanneladvisor">
+                                <title>Manage Items for Export</title>
+                                <sort_order>35</sort_order>
+                                <action>bridgechanneladvisor/adminhtml_prepareitems</action>
+                            </prepareitems>
+                            <shipment translate="title" module="bridgechanneladvisor">
+                                <title>Manage ChannelAdvisor Shipping Methods</title>
+                                <sort_order>40</sort_order>
+                                <action>bridgechanneladvisor/adminhtml_ship</action>
+                            </shipment>
+                            <profile translate="title" module="bridgechanneladvisor">
+                                <title>Manage Profile</title>
+                                <sort_order>50</sort_order>
+                                <action>bridgechanneladvisor/adminhtml_profile</action>
+                            </profile>
+                            <errornotify translate="title" module="bridgechanneladvisor">
+                                <title>Manage Message</title>
+                                <sort_order>60</sort_order>
+                                <action>bridgechanneladvisor/adminhtml_errornotify</action>
+                            </errornotify>
+                            <relationships translate="title" module="bridgechanneladvisor">
+                                <title>Relationships</title>
+                                <sort_order>70</sort_order>
+                                <action>bridgechanneladvisor/adminhtml_relationships</action>
+                            </relationships>
+                        </children>
+                    </bridgechanneladvisor>
+        		</children>
+        	</catalog>
+        </menu>
+        <layout>
+            <updates>
+                <bridgechanneladvisor>
+                    <file>bridgechanneladvisor.xml</file>
+                </bridgechanneladvisor>
+            </updates>
+        </layout>
+    </adminhtml>
+    <default>
+        <carriers>
+            <channeladvisor_rate>
+                <active>1</active>
+                <model>bridgechanneladvisor/carrier_carate</model>
+                <title>ChannelAdvisor Shipping</title>
+                <name>ChannelAdvisor Rate</name>
+                <price>0</price>
+            </channeladvisor_rate>
+        </carriers>
+        <payment>
+            <channeladvisor_payment>
+                <model>bridgechanneladvisor/payment_pay</model>
+            </channeladvisor_payment>
+        </payment>
+        <bridgechanneladvisor>
+            <cadata>
+                <start_page>1</start_page>
+            </cadata>
+            <importemail>
+                <supercheck>1</supercheck>
+            </importemail>
+        </bridgechanneladvisor>
+    </default>
+</config>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <orderstat translate="title" module="orderstat">
+                                        <title>Order Status Integration</title>
+                                    </orderstat>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <orderstat translate="title" module="sales">
+                        <title>Order Status</title>
+                        <children>
+                            <shipment translate="title">
+                                <title>Shipment</title>
+                                <children>
+                                    <approve translate="title">
+                                        <title>Actions</title>
+                                    </approve>
+                                </children>
+                            </shipment>
+                        </children>
+                    </orderstat>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

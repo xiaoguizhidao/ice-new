@@ -1,0 +1,14 @@
+<?php /* @var $this Ven_Content_Block_Slideshow */ ?>
+<div class="ven_slideshow">
+    <ul style="<?php echo 'width:'.$this->getMaxWidth().'px; height:'.$this->getMaxHeight().'px;'; ?>">
+    <?php $images = $this->getImages(); ?>
+    <?php for($i=0; $i<count($images); $i++): ?>
+        <li<?php if ($i==0) { echo ' class="first"'; } else { echo ' style="display:none;"'; } if ($i==count($images)-1) { echo ' class="last"'; } ?>><a href="<?php echo $images[$i]['href'] ?>"><img src="<?php echo $images[$i]['src'] ?>" alt="<?php echo $images[$i]['alt'] ?>" width="<?php echo $images[$i]['width'] ?>" height="<?php echo $images[$i]['height'] ?>" /></a></li>
+    <?php endfor; ?>
+    </ul>
+
+    <div class="ven_slideshow_buttons">
+        <button class="ven_slideshow_prev"><span><span><?php echo $this->__('Show previous slide') ?></span></span></button>
+        <button class="ven_slideshow_next"><span><span><?php echo $this->__('Show next slide') ?></span></span></button>
+    </div>
+</div>

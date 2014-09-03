@@ -1,0 +1,58 @@
+<?php
+/**
+ * Product description template
+ *
+ * @see Mage_Catalog_Block_Product_View_Description
+ */
+$reviewCount = Mage::getModel('review/review')->getTotalReviews($this->getProduct()->getEntityId(), true);
+?>
+<div id="iceau-tabs">
+    <?php $_description = $this->getProduct()->getDescription(); ?>
+    <?php if ($_description): ?>
+        <h2><?php echo $this->__('Product Details') ?></h2>
+        <?php if ($this->getChildHtml('product_shipping_and_returns')): ?>
+        <h2><?php echo $this->__('Shipping & Returns') ?></h2>
+        <?php endif; ?>
+        <h2><?php echo $this->__('Customer Reviews'); ?></h2>
+        <h2><?php echo $this->__('Related Products'); ?></h2>
+
+        <div class="std">
+            <div class="std-wrapper-firstTab">
+                <h3><span><?php echo $this->__("Editor's note") ?></span></h3>
+                <?php echo $this->helper('catalog/output')->productAttribute($this->getProduct(), $_description, 'description') ?>
+
+                <?php if ($productSkuModelNumber = $this->getProduct()->getData("sku")) : ?>
+                <p><strong><span><?php echo $this->__('Ice style') ?>:</span> <?php echo $productSkuModelNumber; ?></strong></p>
+                <?php endif; ?>
+            </div>
+
+            <div class="hr"> </div>
+
+            <?php $attributesData = $this->getChildGroup('attributes', 'getChildHtml'); ?>
+
+            <h3><span><?php echo $this->__('Additional Information') ?></span></h3>
+
+            <?php echo $this->getChildHtml('additional.general')?>
+
+            <?php if (isset($attributesData["additional.certificates"]) && trim($attributesData["additional.certificates"]) != '') : ?>
+                <div class="attributes-wrapper-3">
+                    <?php echo $attributesData["additional.certificates"]; ?>
+                </div>
+            <?php endif; ?>
+
+            <p class="jewelry-link"><strong><?php echo $this->__('Not sure what this all means?') ?></strong> <a href="/education/education-center/"><?php echo $this->__('Check out Jewelry 101') ?></a></p>
+
+            <div class="hr clear"> </div>
+
+            <?php echo $this->getChildHtml("cms_product_customer_services_links"); ?>
+        </div>
+        <div class="std"><?php echo $this->getChildHtml('product_shipping_and_returns') ?></div>
+        <div class="std">
+            <?php echo $this->getChildHtml('advancedreview_custom') ?>
+        </div>
+        <div class="std">
+            <?php echo $this->getChildHtml('upsell_products'); ?>
+        </div>
+    <?php endif; ?>
+</div>
+<script type="text/javascript">document.observe('dom:loaded', function() { new IceTabs("iceau-tabs"); }); // Init Tabs</script>

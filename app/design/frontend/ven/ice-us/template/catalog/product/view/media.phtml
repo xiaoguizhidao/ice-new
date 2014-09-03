@@ -1,0 +1,216 @@
+<?php
+/**
+ * Product media data template
+ * @var $this VenProject_IceAU_Block_Product_View_Media
+ */
+?>
+<?php $helper     = $this->helper('catalog/output'); ?>
+<?php $product    = $this->getProduct(); ?>
+<?php $images     = array(new Varien_Object());//$this->customGetGalleryImages(); ?>
+
+<div id="product-image-current-area" class="product-image product-image-zoom enable-zoom">
+    <?php /*
+    echo $helper->productAttribute($product,
+        "<a id='zoomer' title='" . $images[0]["label"] . "' href='" . $images[0]["src_big"] . "'>
+              <img id='image' src='" . $images[0]["src"] . "' width = '" . $images[0]["sizes"][0] . "' height='" . $images[0]["sizes"][1] . "' alt='" . $images[0]["label"] . "' title='" . $images[0]["label"] . "' />
+        </a>",
+        'image');
+    */?>
+    <?php //$imageSrc = $this->helper('catalog/image')->init($_product, 'image'); ?>
+
+    <a id='zoomer'
+       title='<?php echo $this->htmlEscape($this->getImageLabel())?>'
+       href='<?php echo $this->helper('catalog/image')->init($product, 'image'); ?>'
+    >
+        <img id='image'
+             src='<?php echo $this->helper('catalog/image')->init($product, 'image')->resize(360, 240); ?>'
+             alt='<?php echo $this->htmlEscape($this->getImageLabel())?>'
+             width="360"
+             height="240"
+        />
+    </a>
+    <div id='zoomHint' class='zoomHint'> </div>
+    <?php
+    //TODO: move product ribbons to external template file
+//    $helper           = Mage::helper("venproject_iceau");
+//    $ribbons          = $helper->getProductRibbons($product);
+//    $ribbons_css_mask = "iceau-product-mark iceau-product-mark";
+//    ?>
+<!--    --><?php
+//    if ($ribbons['clearance']) {
+//        echo '<span class="' . $ribbons_css_mask . '-clearance">' . $this->__('Product has Clearance tag') . '</span>';
+//    } elseif ($ribbons['sale']) {
+//        echo '<span class="' . $ribbons_css_mask . '-sale">' . $this->__('Product has Sale tag') . '</span>';
+//    } elseif ($ribbons['new']) {
+//        echo '<span class="' . $ribbons_css_mask . '-new">' . $this->__('Product has New tag') . '</span>';
+//    }
+    ?>
+    <?php $ribbon = Mage::helper("ice")->getRibbon($product); ?>
+    <?php if ($ribbon): ?>
+        <span class="iceau-product-mark iceau-product-mark-<?php echo $ribbon?>"><?php echo  $this->__("Product has {$ribbon} tag"); ?></span>
+    <?php endif; ?>
+    <div id="iceau-video-player" class="video-player">
+        <?php $videoBlock = $this->getParentBlock()->getChildHtml('video_view'); ?>
+        <?php $videoURL   = $product->getData("iceus_video_url"); ?>
+        <?php echo $videoBlock; ?>
+    </div>
+</div>
+
+<div class="more-views">
+    <h2><?php echo $this->__('More Views') ?></h2>
+    <ul id="gallery">
+        <?php $i             = 0; ?>
+        <?php $isVideoExists = (!empty($videoBlock) && !is_null($videoURL)); ?>
+        <?php $limitImages   = ($isVideoExists) ? 3 : 4; ?>
+        <?php $imageHelper = $this->helper('catalog/image'); ?>
+        <?php foreach ($this->getGalleryImages() as $_image): ?>
+        <?php if (++$i > $limitImages) { break; } ?>
+            <li class="enable-zoom">
+                <a rev="<?php echo $imageHelper->init($product, 'image', $_image->getFile())->resize(360, 240); ?>" href="<?php echo $imageHelper->init($product, 'image', $_image->getFile()); ?>" title="<?php echo $this->htmlEscape($_image->getLabel()) ?>">
+                    <img src="<?php echo $imageHelper->init($product, 'thumbnail', $_image->getFile())->resize(56, 37); ?>" alt="<?php echo $this->htmlEscape($_image->getLabel()) ?>" />
+                    <input type="hidden" value="<?php echo $imageHelper->init($product, 'thumbnail', $_image->getFile())->resize(56, 37); ?>" />
+                </a>
+            </li>
+        <?php endforeach; ?>
+        <?php /*foreach ($images as $image): ?>
+        <?php
+        $i++;
+        $class  =  ($i == 1)                ?  "active"                   :  null;
+        $class .=  ($image["enable_zoom"])  ?  " enable-zoom"             :  null;
+        $class  =  (!is_null($class))       ?  ' class="' . $class . '"'  :  null;
+        ?>
+        <?php if ($i <= $limitImages): ?>
+            <li<?php echo $class ?>>
+                <a rev="<?php echo $image["src"] ?>" href="<?php echo $image["src_big"] ?>" title="<?php echo $image["label"] ?>">
+                    <img src="<?php echo $image["thumbnail"] ?>" width="<?php echo $image["sizes_thumb"][0] ?>" height="<?php echo $image["sizes_thumb"][1] ?>" alt="<?php echo $image["label"] ?>" />
+                    <input type="hidden" value="<?php echo $image["thumbnail"] ?>" />
+                </a>
+            </li>
+            <?php endif; ?>
+        <?php endforeach; */ ?>
+        <?php if ($isVideoExists) : ?>
+        <li id="btn-video-player" class="video">
+            <a href="#video-player">&nbsp;</a>
+        </li>
+        <?php endif; ?>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    /*jslint browser: true, vars: true */
+    /*global $, $$, Element, Event, Selector, document, RoomZoom*/
+    (function ($, $$, Event, Element, Selector, RoomZoom) {
+        "use strict";
+        Event.observe(document, 'dom:loaded', function () {
+
+            function iceauPlayerOn() {
+                // init video if it wasn't initialized or flash was deleted while stopping video
+                if ($$('#video-location object, #video-location video').length === 0 && window.video) {
+                    video.show("video-location");
+                }
+                // autoplay in case of HTML5 integration (iOS)
+                $$('#video-location video').each(function (el) {
+                    el.play();
+                });
+
+                $('zoomer').addClassName('display_hide');
+                $('iceau-video-player').addClassName('active');
+
+                $$('#gallery li').each(function (li) {
+                    li.removeClassName('active');
+                });
+
+                $('btn-video-player').addClassName('active');
+                $('zoomHint').removeClassName('zoomHintEnable');
+
+                // hide/show product mark, when image switch to video
+                $$('#product-image-current-area span.iceau-product-mark').each(function (item) {
+                    item.style.display = 'none';
+                });
+            }
+
+            function iceauPlayerOff() {
+                $('zoomer').removeClassName('display_hide').addClassName('display_show');
+                $('iceau-video-player').removeClassName('active');
+
+                // hide/show product mark, when image switch to video
+                $$('#product-image-current-area span.iceau-product-mark').each(function (item) {
+                    item.style.display = 'block';
+                });
+
+                // brutally stop flash video
+                $$('#video-location object').each(function (el) {
+                    el.parentNode.removeChild(el);
+                });
+                // or just pause it in case of HTML5 integration
+                $$('#video-location video').each(function (el) {
+                    el.pause();
+                });
+            }
+
+            var zoom = new RoomZoom($('zoomer'), {
+                alwaysOn:   false,
+                title:      false,
+                zoomWidth:  345,
+                zoomHeight: 230<?php // echo $this->getImageSizeHeight()?$this->getImageSizeHeight():'""' ?>,
+                xOffset:    40,
+                yOffset:    -26,
+                zoomType:   'reverse',
+                position:   'right',
+                hideEffect: false,
+                showEffect: false
+            });
+
+            var currentImageArea = $('product-image-current-area');
+
+            if (currentImageArea.hasClassName('enable-zoom')) {
+                $('zoomHint').addClassName('zoomHintEnable');
+            }
+
+            if (document.location.hash === '#video' || document.location.hash === 'video') {
+                iceauPlayerOn();
+                $('zoomHint').removeClassName('zoomHintEnable');
+            }
+
+            $$('#gallery li').each(function (li) {
+
+                li.observe('click', function (evt) {
+                    // stop event propagation
+                    Event.stop(evt);
+
+                    if (this.id === 'btn-video-player') {
+                        iceauPlayerOn(); // turn on video if video thumbnail has been clicked
+                    } else {
+                        iceauPlayerOff(); // turn off video if other thumbnail has been clicked
+
+                        if (!Element.hasClassName(this, 'active')) {
+                            // show image
+                            $('image').src = Selector.findChildElements(this, ['input[type=hidden]'])[0].value;
+
+                            // change active LI only if we successfully get new image URL (no exceptions)
+                            $$('#gallery li').each(function (el) {
+                                Element.removeClassName(el, 'active');
+                            });
+                            Element.addClassName(this, 'active');
+
+                            if (Element.hasClassName(this, 'enable-zoom')) {
+                                Element.addClassName('product-image-current-area', 'enable-zoom');
+                                Element.addClassName('zoomHint', 'enable-zoom');
+                                Element.addClassName('zoomHint', 'zoomHintEnable');
+                            } else {
+                                Element.removeClassName('product-image-current-area', 'enable-zoom');
+                                Element.removeClassName('zoomHint', 'enable-zoom');
+                                Element.removeClassName('zoomHint', 'zoomHintEnable');
+                            }
+
+                            // swap current image
+                            zoom.swapimage($$('ul#gallery li.active a')[0]);
+                        }
+                    }
+
+                    return false;
+                });
+            });
+        });
+    }($, $$, Event, Element, Selector, RoomZoom));
+</script>

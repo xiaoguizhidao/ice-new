@@ -1,0 +1,28 @@
+<?php
+$_product      = $this->getItem();
+$_configHelper = Mage::helper('searchautocomplete/config');
+?>
+<li data-url="<?php echo $_product->getProductUrl() ?>">
+    <?php if ($_configHelper->isShowImage()): ?>
+    <div class="searchautocomplete-image">
+        <img src="<?php echo $this->helper('mstcore/image')->init($_product, 'thumbnail', 'catalog/product')->resize($_configHelper->getImageWidth(), $_configHelper->getImageHeight()) ?>" width="<?php echo $_configHelper->getImageWidth() ?>px" height="<?php echo $_configHelper->getImageHeight() ?>px"/>
+    </div>
+    <?php endif ?>
+    <div class="searchautocomplete-product-info">
+        <a class="name highlight" href="<?php echo $_product->getProductUrl() ?>"><?php echo $this->htmlEscape($_product->getName()) ?></a>
+        <?php if ($_configHelper->isShowShortDescription()): ?>
+            <div class="highlight">
+            <?php echo Mage::helper('core/string')->truncate(strip_tags($_product->getShortDescription()), $_configHelper->getShortDescriptionLen()) ?>
+            </div>
+        <?php endif ?>
+        <div class="review-summary">
+            <?php echo $this->getReviewsSummaryHtml($_product, 'short', false)?>
+        </div>
+
+        <?php if ($_configHelper->isShowPrice()): ?>
+            <?php echo $this->getPriceHtml($_product, false) ?>
+            <div class="clearfix"></div>
+        <?php endif ?>
+    </div>
+    <div class="clearfix"></div>
+</li>

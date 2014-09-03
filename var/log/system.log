@@ -1,0 +1,1000 @@
+2014-08-28T12:58:06+00:00 DEBUG (7): Invalid transactional email code: 
+2014-08-28T13:08:19+00:00 DEBUG (7): Invalid transactional email code: 
+2014-08-28T13:12:42+00:00 DEBUG (7): Invalid transactional email code: 
+2014-08-28T13:13:43+00:00 ERR (3): Warning: include(Mage/Imagecdn/Model/Observer.php): failed to open stream: No such file or directory  in /var/www/html/ice.new/lib/Varien/Autoload.php on line 93
+2014-08-28T13:13:43+00:00 ERR (3): Warning: include(Mage/Imagecdn/Model/Observer.php): failed to open stream: No such file or directory  in /var/www/html/ice.new/lib/Varien/Autoload.php on line 93
+2014-08-28T13:13:43+00:00 ERR (3): Warning: include(): Failed opening 'Mage/Imagecdn/Model/Observer.php' for inclusion (include_path='/var/www/html/ice.new/app/code/local:/var/www/html/ice.new/app/code/community:/var/www/html/ice.new/app/code/core:/var/www/html/ice.new/lib:.:/usr/share/pear:/usr/share/php')  in /var/www/html/ice.new/lib/Varien/Autoload.php on line 93
+2014-09-02T01:30:55+00:00 DEBUG (7): Invalid transactional email code: 
+2014-09-02T01:32:26+00:00 DEBUG (7): Invalid transactional email code: 
+2014-09-02T15:35:16+00:00 DEBUG (7): Invalid transactional email code: 
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:14+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:14+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:15+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:15+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined offset: 9  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 2038
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 255
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product.php on line 1394
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index: _attribute_set  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Notice: Undefined index:   in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 147
+2014-09-02T21:42:19+00:00 ERR (3): Warning: Invalid argument supplied for foreach()  in /var/www/html/ice.new/app/code/core/Mage/ImportExport/Model/Import/Entity/Product/Type/Abstract.php on line 301
+2014-09-03T15:30:37+00:00 DEBUG (7): Invalid transactional email code: 

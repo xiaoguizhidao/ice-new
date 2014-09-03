@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @category   Oro
+* @package    Oro_Dataflow
+* @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+*/
+-->
+<config>
+    <modules>
+        <Oro_Dataflow>
+            <version>0.1.1</version>
+        </Oro_Dataflow>
+    </modules>
+    <global>
+        <models>
+            <oro_dataflow>
+                <class>Oro_Dataflow_Model</class>
+                <resourceModel>oro_dataflow_resource</resourceModel>
+            </oro_dataflow>
+            <oro_dataflow_resource>
+                <class>Oro_Dataflow_Model_Resource</class>
+                <entities>
+                    <schedule_import>
+                        <table>oro_dataflow_schedule_import</table>
+                    </schedule_import>
+                    <schedule_export>
+                        <table>oro_dataflow_schedule_export</table>
+                    </schedule_export>
+                </entities>
+            </oro_dataflow_resource>
+            <catalog>
+                <rewrite>
+                    <convert_adapter_product>Oro_Dataflow_Model_Catalog_Convert_Adapter_Product</convert_adapter_product>
+                </rewrite>
+            </catalog>
+            <dataflow>
+                <rewrite>
+                    <convert_adapter_io>Oro_Dataflow_Model_Convert_Adapter_Io</convert_adapter_io>
+                </rewrite>
+            </dataflow>
+        </models>
+        <blocks>
+            <oro_dataflow>
+                <class>Oro_Dataflow_Block</class>
+            </oro_dataflow>
+        </blocks>
+        <helpers>
+            <oro_dataflow>
+                <class>Oro_Dataflow_Helper</class>
+            </oro_dataflow>
+        </helpers>
+        <resources>
+            <oro_dataflow_setup>
+                <setup>
+                    <module>Oro_Dataflow</module>
+                </setup>
+            </oro_dataflow_setup>
+        </resources>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <oro_dataflow before="Mage_Adminhtml">Oro_Dataflow_Adminhtml</oro_dataflow>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <oro_dataflow_catalog>
+                    <file>oro/dataflow/catalog.xml</file>
+                </oro_dataflow_catalog>
+            </updates>
+        </layout>
+    </adminhtml>
+    <crontab>
+        <jobs>
+            <oro_dataflow_execute>
+                <schedule>
+                    <cron_expr>*/5 * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>oro_dataflow/observer::runSchedule</model>
+                </run>
+            </oro_dataflow_execute>
+        </jobs>
+    </crontab>
+    <default>
+        <oro_dataflow>
+            <import_export>
+                <enable>0</enable>
+                <export_task_size>250</export_task_size>
+                <import_task_size>250</import_task_size>
+                <root_category />
+                <import_dataflow_profile />
+                <export_dataflow_profile />
+            </import_export>
+        </oro_dataflow>
+    </default>
+</config>

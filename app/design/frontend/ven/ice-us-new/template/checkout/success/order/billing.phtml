@@ -1,0 +1,32 @@
+<?php
+    $_billing = $this->getOrder()->getBillingAddress();
+?>
+
+<table class="order-information billing-info">
+<tbody>
+    <tr>
+        <th>Billing Address:</th>
+    </tr>
+    <tr>
+        <td class="full-name"><?php echo $_billing->getName() ?></td>
+    </tr>
+    <tr>
+        <td class="street-address"><?php echo $_billing->getStreet1() ?></td>
+    </tr>
+    <?php if($_billing->getStreet2()): ?>
+    <tr>
+        <td class="street-address"><?php echo $_billing->getStreet2(); ?></td>
+    </tr>
+    <?php endif; ?>
+    <tr>
+
+        <td class="city-state-zip"><?php echo $_billing->getCity(); ?>, <?php echo $_billing->getRegion() ?> <?php echo $_billing->getPostcode(); ?>, <?php echo $_billing->getCountry(); ?></td>
+    </tr>
+    <tr>
+        <td class="email-address"><?php echo $_billing->getEmail(); ?></td>
+    </tr>
+    <tr>
+        <td class="phone-number"><?php echo $_billing->getTelephone(); ?></td>
+    </tr>
+</tbody>
+</table>

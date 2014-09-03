@@ -1,0 +1,31 @@
+<?php
+/** @var Mage_Catalog_Model_Product $_product */
+$_product = $this->getProduct();
+?>
+<?php $buttonTitle = $this->__('Add to Cart'); ?>
+<?php if ($_product->isSaleable()): ?>
+    <div class="add-to-cart">
+        <?php if (!$_product->isGrouped()): ?>
+            <label for="qty"><?php echo $this->__('Qty:') ?></label>
+            <input type="text" name="qty" id="qty" maxlength="12"
+                   value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Qty') ?>"
+                   class="input-text qty"/>
+        <?php endif; ?>
+        <div class="hr"></div>
+        <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart"
+                onclick="productAddToCartForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span>
+        </button>
+        <?php if ($_product->isAvailable()): ?>
+            <?php $_productQty = $_product->getStockItem()->getStockQty(); ?>
+            <?php $_qtyThreshold = Mage::getStoreConfig('cataloginventory/options/stock_threshold_qty'); ?>
+            <?php if ($_productQty > 0 && $_productQty <= $_qtyThreshold) : ?>
+                <p class="availability in-stock"><span><?php echo $this->__('Only %s left', $_productQty) ?></span></p>
+            <?php else: ?>
+                <p class="availability in-stock"><span><?php echo $this->__('In stock') ?></span></p>
+            <?php endif; ?>
+        <?php else: ?>
+            <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+        <?php endif; ?>
+        <?php echo $this->getChildHtml('', true, true) ?>
+    </div>
+<?php endif; ?>

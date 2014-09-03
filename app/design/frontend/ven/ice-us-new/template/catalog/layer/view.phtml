@@ -1,0 +1,58 @@
+<?php
+/**
+ * Category layered navigation
+ *
+ * @var $this Mage_Catalog_Block_Layer_View
+ * @var $this Mage_CatalogSearch_Block_Layer
+ */
+?>
+<?php if($this->canShowBlock() || true): ?>
+<?php
+    $_handles      = $this->getLayout()->getUpdate()->getHandles();
+    $_isSearchPage = (in_array("catalogsearch_result_index", $_handles)) ? true : false;
+?>
+<?php echo $this->getStateHtml() ?>
+<div class="block block-layered-nav">
+    <div class="block-title">
+        <strong><span><?php echo $this->__('Shop By') ?></span></strong>
+    </div>
+    <div class="block-content">
+        <?php if($this->canShowOptions()): ?>
+        <p class="block-subtitle"><?php echo $this->__('Shopping Options') ?></p>
+        <dl id="narrow-by-list">
+        <?php
+            $_filters                   = $this->getFilters();
+            $_index_categories_standard = null;
+            $_index_categories_custom   = null;
+
+            for ($i = 0; $i < count($_filters); $i++) {
+                if ($_filters[$i] instanceof Mage_Catalog_Block_Layer_Filter_Category) {
+                    $_index_categories_standard = $i;
+                }
+
+                if ($_filters[$i] instanceof Mage_Catalog_Block_Layer_Filter_Attribute &&
+                    $_filters[$i]->getAttributeModel()->getAttributeCode() == "iceus_item_type"
+                ) {
+                    $_index_categories_custom = $i;
+                }
+            }
+
+            if (!is_null($_index_categories_standard) && !is_null($_index_categories_custom)) {
+                if ($_isSearchPage) {
+                    $_filters[$_index_categories_custom] = $_filters[$_index_categories_standard];
+                }
+                unset($_filters[$_index_categories_standard]);
+            }
+        ?>
+        <?php foreach ($_filters as $a => $_filter): ?>
+            <?php if ($_filter->getItemsCount()): ?>
+                <dt><?php echo $this->__($_filter->getName()); ?></dt>
+                <dd><?php echo $_filter->getHtml(); ?></dd>
+            <?php endif; ?>
+        <?php endforeach; ?>
+        </dl>
+        <script type="text/javascript">decorateDataList('narrow-by-list')</script>
+        <?php endif; ?>
+    </div>
+</div>
+<?php endif; ?>

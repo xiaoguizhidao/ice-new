@@ -1,0 +1,82 @@
+<?php
+/* @var $this Ven_Content_Block_Sitemap */
+$categories = $this->getCategories();
+?>
+<div class="html-sitemap <?php echo $this->getRenderTree() ? "tree" : "plain"; ?>">
+    <div class="page-title">
+        <h1><?php echo $this->__("Sitemap"); ?></h1>
+    </div>
+    <?php if ($categories->count() > 0): ?>
+
+        <?php
+
+        $GROUPS_COUNT = 3;
+        $group_length = $categories->count() / $GROUPS_COUNT;
+
+        $item_index         = 0;
+        $group_index        = 1;
+        $categories_grouped = array();
+
+        foreach ($categories as $category) {
+            if ($item_index > ceil($group_length * $group_index) && $this->getLevel($category) == 1) {
+                $group_index++;
+            }
+            if (!array_key_exists($group_index, $categories_grouped)) {
+                $categories_grouped[$group_index] = array();
+            }
+            $categories_grouped[$group_index][] = $category;
+            $item_index++;
+        }
+
+        $prev_level = 1;
+
+        ?>
+
+        <table width="100%">
+            <col width="33%" />
+            <col width="33%" />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <ul class="sitemap-categories">
+                            <?php foreach ($categories_grouped[1] as $category): ?>
+                                <?php $level = $this->getLevel($category); ?>
+                                <li class="<?php if ($this->getRenderTree()) { echo "level-".$level; if ($level > $prev_level) { echo " first"; } } ?>">
+                                    <a href="<?php echo $category->getUrl(); ?>"><?php echo $category->getName(); ?></a>
+                                </li>
+                                <?php $prev_level = $this->getLevel($category); ?>
+                            <?php endforeach; ?>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="sitemap-categories">
+                            <?php foreach ($categories_grouped[2] as $category): ?>
+                                <?php $level = $this->getLevel($category); ?>
+                                <li class="<?php if ($this->getRenderTree()) { echo "level-".$level; if ($level > $prev_level) { echo " first"; } } ?>">
+                                    <a href="<?php echo $category->getUrl(); ?>"><?php echo $category->getName(); ?></a>
+                                </li>
+                                <?php $prev_level = $this->getLevel($category); ?>
+                            <?php endforeach; ?>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="sitemap-categories">
+                            <?php foreach ($categories_grouped[3] as $category): ?>
+                                <?php $level = $this->getLevel($category); ?>
+                                <li class="<?php if ($this->getRenderTree()) { echo "level-".$level; if ($level > $prev_level) { echo " first"; } } ?>">
+                                    <a href="<?php echo $category->getUrl(); ?>"><?php echo $category->getName(); ?></a>
+                                </li>
+                                <?php $prev_level = $this->getLevel($category); ?>
+                            <?php endforeach; ?>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    <?php else: ?>
+        <p class="note-msg">
+            <?php echo $this->__('There are no categories available.'); ?>
+        </p>
+    <?php endif; ?>
+</div>

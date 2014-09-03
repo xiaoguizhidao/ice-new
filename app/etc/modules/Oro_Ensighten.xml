@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/** {license_text}  */
+-->
+<config>
+    <modules>
+        <Oro_Ensighten>
+            <active>false</active>
+            <codePool>local</codePool>
+            <depends>
+                <Oro_Ice/>
+
+            </depends>
+        </Oro_Ensighten>
+    </modules>
+</config>

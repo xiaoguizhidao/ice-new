@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <amaudit_adminhtml_log_edit>
+     <reference name="head">            
+            <action method="addItem"><type>skin_css</type><name>css/amasty/amaudit.css</name><params/></action>
+        </reference>
+       <reference name="left">
+            <block type="amaudit/adminhtml_userlog_edit_tabs" name="userlog_edit_tabs">
+               <block type="amaudit/adminhtml_userlog_edit_tab_view" name="amaudit_userlog_edit_tab_view" template="amaudit/tab/view.phtml">
+                    <block type="amaudit/adminhtml_userlog_edit_tab_view_details" name="amaudit_userlog_edit_tab_view_details" template="amaudit/tab/view/details.phtml" before="-" />
+                </block>
+            </block>
+        </reference>
+    </amaudit_adminhtml_log_edit>
+        
+    <amaudit_adminhtml_log_index>
+        <reference name="head"> 
+            <action method="addCss"><name>css/amasty/amaudit.css</name></action> 
+            <action method="addItem"><type>skin_js</type><name>js/amasty/bubleTooltip.js</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/amasty/bubleTooltip.css</name><params/></action>          
+        </reference>
+        
+        <reference name="content">
+           <block type="amaudit/adminhtml_tooltip" name="tooltip" template="amaudit/tooltip.phtml"/>
+        </reference>
+    </amaudit_adminhtml_log_index>
+</layout>

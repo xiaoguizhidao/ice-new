@@ -1,0 +1,9 @@
+a:5:{i:0;s:159:"Error in file: "/var/www/html/ice.new/app/code/local/Ice/Pricekit/sql/ice_pricekit_setup/install-0.1.0.php" - Can't retrieve entity config: ice_pricekit/entity";i:1;s:924:"#0 /var/www/html/ice.new/app/code/core/Mage/Core/Model/Resource/Setup.php(645): Mage::exception('Mage_Core', 'Error in file: ...')
+#1 /var/www/html/ice.new/app/code/core/Mage/Core/Model/Resource/Setup.php(421): Mage_Core_Model_Resource_Setup->_modifyResourceDb('install', '', '0.1.0')
+#2 /var/www/html/ice.new/app/code/core/Mage/Core/Model/Resource/Setup.php(327): Mage_Core_Model_Resource_Setup->_installResourceDb('0.1.0')
+#3 /var/www/html/ice.new/app/code/core/Mage/Core/Model/Resource/Setup.php(235): Mage_Core_Model_Resource_Setup->applyUpdates()
+#4 /var/www/html/ice.new/app/code/core/Mage/Core/Model/App.php(417): Mage_Core_Model_Resource_Setup::applyAllUpdates()
+#5 /var/www/html/ice.new/app/code/core/Mage/Core/Model/App.php(343): Mage_Core_Model_App->_initModules()
+#6 /var/www/html/ice.new/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#7 /var/www/html/ice.new/index.php(87): Mage::run('', 'store')
+#8 {main}";s:3:"url";s:48:"/index.php/admin/system_config/edit/section/dev/";s:11:"script_name";s:10:"/index.php";s:4:"skin";s:7:"default";}

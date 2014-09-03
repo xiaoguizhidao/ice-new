@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Oro
+ * @package    Oro_Friends
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+-->
+<config>
+    <sections>
+        <promo>
+            <groups>
+                <oro_friends translate="label">
+                    <label>500friends</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <fields>
+                        <account_id translate="label">
+                            <label>Account ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </account_id>
+                        <api_secret translate="label">
+                            <label>Api Secret</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </api_secret>
+                        <api_uri translate="label">
+                            <label>Api URI</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </api_uri>
+                    </fields>
+                </oro_friends>
+            </groups>
+        </promo>
+    </sections>
+</config>

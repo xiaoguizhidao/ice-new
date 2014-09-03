@@ -1,0 +1,48 @@
+<?php
+/**
+ * Product additional attributes template
+ *
+ * @see Mage_Catalog_Block_Product_View_Attributes
+ */
+?>
+<?php /* @var $this Mage_Catalog_Block_Product_View_Attributes */ ?>
+<?php
+    $_helper = $this->helper('catalog/output');
+    $_product = $this->getProduct();
+?>
+<?php if($_additional = $this->getAdditionalData()): ?>
+<ul class="attributes-additional-wrapper">
+    <?php $i = 0; ?>
+    <?php foreach ($_additional as $column): ?>
+    <?php if ($i%2 == 0):?>
+    <li><ul class="attributes-additional-col">
+    <?php endif; ?>
+    <li class="product-attribute-cell">
+    <table class="data-table product-attribute-table">
+        <col width="25%" />
+        <col />
+        <tbody>
+        <?php if (isset($column['col-header'])): ?>
+            <tr>
+                <th class="label"><?php echo $this->escapeHtml($this->__($column['col-header']['label'])) ?></th>
+                <td class="data"><?php echo $this->escapeHtml($this->__($column['col-header']['value'])) ?></td>
+            </tr>
+            <?php unset($column['col-header']); ?>
+        <?php endif; ?>
+        <?php foreach ($column as $_data): ?>
+            <tr>
+                <th class="label"><?php echo $this->escapeHtml($this->__($_data['label'])) ?></th>
+                <td class="data"><?php echo $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+    </li>
+    <?php $i++;?>
+    <?php if ($i%2 == 0 || $i == count($_additional)):?>
+    </li></ul>
+    <?php endif; ?>
+    <?php endforeach;?>
+</ul>
+<!--    <script type="text/javascript">decorateTable('product-attribute-specs-table')</script>-->
+<?php endif;?>

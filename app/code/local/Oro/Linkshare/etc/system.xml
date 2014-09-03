@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Oro
+ * @package    Oro_Linkshare
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+-->
+<config>
+    <sections>
+        <promo>
+            <groups>
+                <linkshare translate="label">
+                    <label>Linkshare</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <fields>
+                        <merchant_id translate="label">
+                            <label>Merchant ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </merchant_id>
+                        <coupon_prefix>
+                            <label>Coupon Prefix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </coupon_prefix>
+                    </fields>
+                </linkshare>
+            </groups>
+        </promo>
+    </sections>
+</config>

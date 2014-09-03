@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Oro_Ice>
+            <version>0.1.0</version>
+        </Oro_Ice>
+    </modules>
+    <global>
+        <models>
+            <ice>
+                <class>Oro_Ice_Model</class>
+                <resourceModel>ice_resource</resourceModel>
+            </ice>
+            <ice_resource>
+                <class>Oro_Ice_Model_Resource</class>
+            </ice_resource>
+            <catalog>
+                <rewrite>
+                    <observer>Oro_Ice_Model_Catalog_Observer</observer>
+                </rewrite>
+            </catalog>
+
+            <catalog_resource>
+                <rewrite>
+                    <product_collection>Oro_Ice_Model_Catalog_Resource_Product_Collection</product_collection>
+                </rewrite>
+            </catalog_resource>
+            <catalogsearch_resource>
+                <rewrite>
+                    <fulltext_collection>Oro_Ice_Model_CatalogSearch_Resource_Fulltext_Collection</fulltext_collection>
+                </rewrite>
+            </catalogsearch_resource>
+        </models>
+        <blocks>
+            <ice>
+                <class>Oro_Ice_Block</class>
+            </ice>
+        </blocks>
+        <helpers>
+            <ice>
+                <class>Oro_Ice_Helper</class>
+            </ice>
+        </helpers>
+        <resources>
+            <ice_setup>
+                <setup>
+                    <module>Oro_Ice</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+            </ice_setup>
+        </resources>
+    </global>
+    <frontend>
+        <secure_url>
+            <ice_ajax>/ice/ajax</ice_ajax>
+        </secure_url>
+        <routers>
+            <ice>
+                <use>standard</use>
+                <args>
+                    <module>Oro_Ice</module>
+                    <frontName>ice</frontName>
+                </args>
+            </ice>
+        </routers>
+        <category>
+            <collection>
+                <attributes>
+                    <iceau_menu_column_number />
+                    <iceau_menu_viewmore_link_text />
+                    <iceau_menu_label_col1 />
+                    <iceau_menu_label_col2 />
+                    <iceau_menu_label_col3 />
+                </attributes>
+            </collection>
+        </category>
+        <events>
+            <catalog_category_flat_loadnodes_before>
+                <observers>
+                    <oro_ice>
+                        <class>ice/observer</class>
+                        <method>addCategoryAttributesToSelect</method>
+                    </oro_ice>
+                </observers>
+            </catalog_category_flat_loadnodes_before>
+        </events>
+    </frontend>
+</config>

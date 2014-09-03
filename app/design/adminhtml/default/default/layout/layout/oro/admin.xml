@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Oro
+ * @package    Oro_Admin
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+-->
+<layout>
+    <adminhtml_sales_order_view>
+        <reference name="order_history">
+            <action method="setTemplate"><template>oro/admin/sales/order/view/history.phtml</template></action>
+        </reference>
+    </adminhtml_sales_order_view>
+    <adminhtml_sales_order_addcomment>
+        <update handle="adminhtml_sales_order_view" />
+    </adminhtml_sales_order_addcomment>
+</layout>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @category   Oro
+* @package    Oro_Migration
+* @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+*/
+-->
+<config>
+    <menu>
+        <oro_migration translate="title" module="oro_migration">
+            <title>Migration</title>
+            <sort_order>200</sort_order>
+            <action>adminhtml/migration</action>
+        </oro_migration>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <oro_migration translate="title" module="oro_migration">
+                                        <title>Migration</title>
+                                    </oro_migration>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+        <resources>
+            <admin>
+                <children>
+                    <oro_migration>
+                        <title>Oro Migration</title>
+                        <sort_order>30</sort_order>
+                    </oro_migration>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

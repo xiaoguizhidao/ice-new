@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @category   Oro
+* @package    Oro_Dataflow
+* @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+*/
+-->
+<config>
+    <menu>
+        <catalog>
+            <children>
+                <oro_dataflow_catalog_dashboard translate="title" module="oro_dataflow">
+                    <title>Catalog Import/Export</title>
+                    <sort_order>30</sort_order>
+                    <action>adminhtml/oro_dataflow_catalog/dashboard</action>
+                </oro_dataflow_catalog_dashboard>
+            </children>
+        </catalog>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <oro_dataflow translate="title" module="oro_dataflow">
+                                        <title>Dataflow</title>
+                                    </oro_dataflow>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <oro_dataflow_catalog_dashboard>
+                                <title>Catalog Import/Export</title>
+                                <sort_order>30</sort_order>
+                            </oro_dataflow_catalog_dashboard>
+                        </children>
+                    </catalog>
+                 </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

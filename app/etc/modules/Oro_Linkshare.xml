@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Oro
+ * @package    Oro_Linkshare
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+-->
+<config>
+    <modules>
+        <Oro_Linkshare>
+            <active>false</active>
+            <codePool>local</codePool>
+        </Oro_Linkshare>
+    </modules>
+</config>

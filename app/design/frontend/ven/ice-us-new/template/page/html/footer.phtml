@@ -1,0 +1,26 @@
+<div class="footer-additional">
+    <?php echo $this->getChildHtml("bottomContainer") ?>
+</div>
+<div class="footer-container">
+    <div class="footer">
+        <div class="why-shop-ice">
+            <?php echo $this->getChildHtml("cms_footer_why_shop_ice") ?>
+        </div>
+        <div class="service">
+            <?php echo $this->getChildHtml("cms_footer_links") ?>
+            <?php echo $this->getChildHtml("footer_links") ?>
+        </div>
+        <div class="newsletter-form">
+            <?php echo $this->getChildHtml("newsletter") ?>
+            <?php echo $this->getChildHtml("cms_footer_social_buttons") ?>
+        </div>
+        <div class="sub-footer-wrapper">
+            <ul class="sub-footer">
+                <li><?php echo $this->getChildHtml("cms_footer_address") ?></li>
+                <li><?php echo str_replace('{{current_year}}', date('Y'), $this->getChildHtml("cms_footer_copyright_and_terms")) ?></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<?php echo $this->getChildHtml("newsletter_popup") ?>

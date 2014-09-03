@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+    <field>
+        <name>Order_ID</name>
+        <type>order</type>
+        <action>increment_id</action>
+    </field>
+    <field>
+        <name>SKU</name>
+        <type>item</type>
+        <action>sku</action>
+    </field>
+    <field>
+        <name>Quantity</name>
+        <type>item</type>
+        <action>_getQty</action>
+    </field>
+    <field>
+        <name>Sales Price</name>
+        <type>parent_item</type>
+        <action>price</action>
+    </field>
+    <field>
+        <name>Customer name</name>
+        <type>address</type>
+        <action>name</action>
+    </field>
+    <field>
+        <name>ShipAddress1</name>
+        <type>address</type>
+        <action>street</action>
+        <param>1</param>
+    </field>
+    <field>
+        <name>ShipAddress2</name>
+        <type>address</type>
+        <action>street</action>
+        <param>2</param>
+    </field>
+    <field>
+        <name>ShipCity</name>
+        <type>address</type>
+        <action>city</action>
+    </field>
+    <field>
+        <name>ShipState</name>
+        <type>address</type>
+        <action>region_code</action>
+    </field>
+    <field>
+        <name>ShipZip</name>
+        <type>address</type>
+        <action>postcode</action>
+    </field>
+    <field>
+        <name>ShipCountry</name>
+        <type>address</type>
+        <action>country_id</action>
+    </field>
+    <field>
+        <name>ShipPhone</name>
+        <type>address</type>
+        <action>telephone</action>
+    </field>
+    <field>
+        <name>Service_Type</name>
+        <type>order</type>
+        <action>_getServiceType</action>
+    </field>
+
+    <field>
+        <name>UPS/FEDEX Account_Number</name>
+        <type>order</type>
+        <action>_getShippingAccountNumber</action>
+    </field>
+    <!--
+    <field>
+        <name>Tracking Number</name>
+        <type>shipping</type>
+        <action>trackingNumber</action>
+    </field>
+    <field>
+        <name>Invoice Number</name>
+        <type>order</type>
+        <action>invoicenumber</action>
+    </field>
+    -->
+</order>

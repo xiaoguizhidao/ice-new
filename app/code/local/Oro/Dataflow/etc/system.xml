@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Oro
+ * @package    Oro_Dataflow
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+-->
+<config>
+    <sections>
+        <oro_dataflow translate="label" module="oro_dataflow">
+            <label>Catalog Import/Export</label>
+            <tab>catalog</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>990</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <import_export translate="label">
+                    <label>Catalog Import/Export Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable translate="label,comment">
+                            <label>Enable Tasks Processing</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </enable>
+                        <export_task_size translate="label">
+                            <label>Export Task Size</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </export_task_size>
+                        <import_task_size translate="label">
+                            <label>Import Task Size</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </import_task_size>
+                        <!--
+                        <root_category translate="label">
+                            <label>Root Category ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </root_category>
+                        -->
+                        <import_dataflow_profile>
+                            <label>Import Dataflow Profile Id</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>50</sort_order>
+                            <source_model>oro_dataflow/system_config_source_profile</source_model>
+                            <show_in_default>1</show_in_default>
+                        </import_dataflow_profile>
+                        <export_dataflow_profile>
+                            <label>Export Dataflow Profile Id</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>60</sort_order>
+                            <source_model>oro_dataflow/system_config_source_profile</source_model>
+                            <show_in_default>1</show_in_default>
+                        </export_dataflow_profile>
+                    </fields>
+                </import_export>
+            </groups>
+        </oro_dataflow>
+    </sections>
+</config>

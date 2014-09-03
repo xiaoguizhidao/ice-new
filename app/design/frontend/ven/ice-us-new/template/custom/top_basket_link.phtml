@@ -1,0 +1,13 @@
+<?php
+/* @var $this Mage_Core_Block_Template */
+$_cartQty = Mage::getSingleton('checkout/cart')->getSummaryQty();
+?>
+<div class="top-basket-link">
+  <a href="<?php echo $this->getUrl('checkout/cart'); ?>">
+    <span class="">
+    	<?php if($_cartQty): ?>
+	      <span class="cart_total_qty"><?php echo $_cartQty ?></span>
+	    <?php endif; ?>
+    </span>
+  </a>
+</div>

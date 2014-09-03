@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Oro
+ * @package    Oro_Dataflow
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+-->
+<layout>
+    <adminhtml_oro_dataflow_catalog_dashboard>
+        <reference name="content">
+            <block type="oro_dataflow/adminhtml_catalog_dashboard" name="dashboard" template="oro/dataflow/catalog/dashboard.phtml">
+                <block type="oro_dataflow/adminhtml_catalog_dashboard_export" name="export_history"/>
+                <block type="oro_dataflow/adminhtml_catalog_dashboard_import" name="import_history"/>
+            </block>
+        </reference>
+    </adminhtml_oro_dataflow_catalog_dashboard>
+
+    <adminhtml_oro_dataflow_catalog_dashboard_export_grid>
+        <block type="oro_dataflow/adminhtml_catalog_dashboard_export_grid" name="root" output="toHtml"/>
+    </adminhtml_oro_dataflow_catalog_dashboard_export_grid>
+
+    <adminhtml_oro_dataflow_catalog_dashboard_import_grid>
+        <block type="oro_dataflow/adminhtml_catalog_dashboard_import_grid" name="root" output="toHtml"/>
+    </adminhtml_oro_dataflow_catalog_dashboard_import_grid>
+
+    <adminhtml_oro_dataflow_catalog_detailsexport>
+        <reference name="content">
+            <block type="oro_dataflow/adminhtml_catalog_schedule_details_export" name="details" template="oro/dataflow/schedule/details/export.phtml" />
+        </reference>
+    </adminhtml_oro_dataflow_catalog_detailsexport>
+
+    <adminhtml_oro_dataflow_catalog_detailsimport>
+        <reference name="content">
+            <block type="oro_dataflow/adminhtml_catalog_schedule_details_import" name="details" template="oro/dataflow/schedule/details/import.phtml" />
+        </reference>
+    </adminhtml_oro_dataflow_catalog_detailsimport>
+
+    <adminhtml_oro_dataflow_catalog_newexport>
+        <reference name="content">
+            <block type="oro_dataflow/adminhtml_catalog_dashboard_export_edit" name="form_container" />
+        </reference>
+        <reference name="left">
+            <block type="oro_dataflow/adminhtml_catalog_dashboard_export_edit_tabs" name="tabs">
+                <block type="oro_dataflow/adminhtml_catalog_dashboard_export_edit_tab_general" name="general_tab" />
+                <block type="oro_dataflow/adminhtml_catalog_dashboard_export_edit_tab_product" name="product_tab">
+                    <block type="oro_dataflow/adminhtml_catalog_dashboard_export_edit_tab_product_grid" name="product_tab_grid" />
+                    <block type="adminhtml/widget_grid_serializer" name="grid_serializer">
+                        <reference name="grid_serializer">
+                            <action method="initSerializerBlock">
+                                <grid_block_name>product_tab_grid</grid_block_name>
+                                <callback>getSelectedProducts</callback>
+                                <hidden_input_name>ids</hidden_input_name>
+                                <reload_param_name>products</reload_param_name>
+                            </action>
+                        </reference>
+                    </block>
+                </block>
+            </block>
+            <reference name="tabs">
+                <action method="addTab">
+                    <id>general</id>
+                    <block>general_tab</block>
+                </action>
+                <action method="addTab">
+                    <id>product_grid</id>
+                    <block>product_tab</block>
+                </action>
+            </reference>
+        </reference>
+    </adminhtml_oro_dataflow_catalog_newexport>
+
+    <adminhtml_oro_dataflow_catalog_newexportproductgrid>
+        <block type="oro_dataflow/adminhtml_catalog_dashboard_export_edit_tab_product_grid" name="root" output="toHtml" />
+    </adminhtml_oro_dataflow_catalog_newexportproductgrid>
+
+
+    <adminhtml_oro_dataflow_catalog_newimport>
+        <reference name="content">
+            <block type="oro_dataflow/adminhtml_catalog_dashboard_import_edit" name="form_container" />
+        </reference>
+        <reference name="left">
+            <block type="oro_dataflow/adminhtml_catalog_dashboard_import_edit_tabs" name="tabs">
+                <block type="oro_dataflow/adminhtml_catalog_dashboard_import_edit_tab_general" name="general_tab" />
+            </block>
+            <reference name="tabs">
+                <action method="addTab">
+                    <id>general</id>
+                    <block>general_tab</block>
+                </action>
+            </reference>
+        </reference>
+    </adminhtml_oro_dataflow_catalog_newimport>
+</layout>

@@ -1,0 +1,44 @@
+<?php
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+$_customerHelper = Mage::helper('customer');
+?>
+<div class="status-bar">
+    <span class="contact-links">
+        <span class="phone"><?php echo __("Order Now:") ?> <?php echo Mage::getStoreConfig('general/store_information/phone'); ?></span>
+    </span>
+    <span class="additional-links">
+        <?php if(!$_customerHelper->isLoggedIn()): ?>
+        <a href="<?php echo $_customerHelper->getLoginUrl(); ?>"><?php echo $this->__("Sign In"); ?></a>
+        <a href="<?php echo $_customerHelper->getRegisterUrl(); ?>"><?php echo $this->__("Create Account"); ?></a>
+        <?php else: ?>
+        <?php if ($this->getWelcome()!=null): ?>
+            <span class="welcome-msg"><?php echo $this->getWelcome() ?></span>
+        <?php endif; ?>
+
+        <a href="<?php echo $_customerHelper->getLogoutUrl(); ?>"><?php echo $this->__("Sign Out"); ?></a>
+        <a href="<?php echo $_customerHelper->getAccountUrl(); ?>"><?php echo $this->__("My Account"); ?></a>
+        <?php endif; ?>
+        <a href="<?php echo $this->getUrl('customer-service'); ?>"><?php echo $this->__("Help"); ?></a>
+        <a href="<?php echo Mage::helper('wishlist')->getListUrl(); ?>"><?php echo $this->__("Wishlist"); ?></a>
+    </span>
+</div>
+<div class="header-container">
+    <div class="header">
+        <?php if ($this->getIsHomePage()):?>
+            <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+            <?php else:?>
+            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+        <?php endif?>
+        <div class="quick-access">
+            <?php echo $this->getChildHtml('topSearch') ?>
+            <?php echo $this->getChildHtml('topBasketLink') ?>
+        </div>
+        <?php echo $this->getChildHtml('topContainer'); ?>
+    </div>
+</div>
+<?php echo $this->getChildHtml('topMenu') ?>
+<div class="header-sitewide">
+<?php echo $this->getChildHtml('top.sitewide'); ?>
+</div>

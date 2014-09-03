@@ -1,0 +1,93 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Shoping cart sidebar
+ *
+ * @see Mage_Checkout_Block_Cart_Sidebar
+ */
+
+?>
+<?php if ($this->getIsNeedToDisplaySideBar()):?>
+<div class="section active allow">
+    <div class="step-title">
+        <h2><?php echo $this->__('Cart'); ?></h2>
+    </div>
+    <div class="sidebar-cart-wrapper">
+        <form action="<?php echo $this->getUrl('checkout/cart/updatePost') ?>" method="post">
+        <input type="hidden" name="return_url" value="<?php echo Mage::helper('core/url')->getCurrentUrl(); ?>" />
+        <table class="sidebar-cart-items" value="update_qty">
+            <tr>
+                <th><?php echo $this->__('Item'); ?></th>
+                <th><?php echo $this->__('Qty'); ?></th>
+                <th><?php echo $this->__('Price'); ?></th>
+            </tr>
+            <?php $_items = $this->getRecentItems() ?>
+            <?php if(count($_items)): ?>
+                <?php foreach($_items as $_item): ?>
+                    <?php echo $this->getItemHtml($_item) ?>
+                <?php endforeach; ?>
+                <script type="text/javascript">decorateList('cart-sidebar', 'none-recursive')</script>
+            <?php else: ?>
+                <tr>
+                    <td colspan="3">
+                        <p class="empty"><?php echo $this->__('You have no items in your shopping cart.') ?></p>
+                    </td>
+                </tr>
+            <?php endif ?>
+            <tr>
+                <td colspan="3" class="sidebar-cart-update">
+                   <button type="submit" name="update_cart_action" value="update_qty" title="Update Shopping Cart" class="button btn-update">
+                        <span><?php echo $this->__('Update Shopping Cart'); ?></span>
+                    </button>
+
+                </td>
+            </tr>
+            <?php $_totals = $this->getTotals(); ?>
+            <tr class="cart-total">
+              <th colspan="2">
+              <?php echo $this->__('Subtotal:'); ?></th>
+              <td class="price">
+                <span><?php echo $this->helper('checkout')->formatPrice($this->getSubtotal()) ?></span>
+                </td>
+            </tr>
+            <tr class="cart-total">
+                <th colspan="2"><?php echo $this->__('Tax'); ?>:</th>
+                <td class="price"></td>
+            </tr>
+            <tr class="cart-total">
+                <th colspan="2"><?php echo $this->__('Shipping'); ?>:</th>
+                <td class="price"></td>
+            </tr>
+            <tr class="cart-total">
+                <th colspan="2"><?php echo $this->__('Grand Total'); ?>:</th>
+                <td class="price"><?php echo $this->helper('checkout')->formatPrice($_totals['grand_total']->getValue()) ?></span>
+            </tr>
+        </table>
+        </form>
+    </div>
+</div>
+<?php endif; ?>

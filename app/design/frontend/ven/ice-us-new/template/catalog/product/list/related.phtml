@@ -1,0 +1,44 @@
+<?php
+/* @var $this Mage_Catalog_Block_Product_List_Related */
+?>
+<?php if($this->getItems()->getSize()): ?>
+<div class="block block-related">
+    <div class="block-title">
+        <strong><span><?php echo $this->__('Customers Also Bought') ?></span></strong>
+    </div>
+    <div class="block-content">
+        <ol class="mini-products-list" id="block-related">
+        <?php foreach($this->getItems() as $_item): ?>
+            <li class="item">
+                <div class="item-wrapper">
+                    <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="product-image">
+                        <img src="<?php echo $this->helper('catalog/image')->init($_item, 'small_image')->resize(180, 120) ?>" width="180" height="120" alt="<?php echo $this->htmlEscape($_item->getName()) ?>" />
+                    </a>
+
+                    <p class="product-name product-name-wrap"><a href="<?php echo $_item->getProductUrl() ?>"><?php echo $this->htmlEscape($_item->getName()) ?></a></p>
+                    <?php if($_item->getIceauVideoUrl() != null): ?>
+                        <a href="<?php echo $_item->getProductUrl(); ?>#video" class="video-icon"> <span><?php echo $this->__('Video Available'); ?></span></a>
+                    <?php endif; ?>
+                    <?php echo $this->getReviewsSummaryHtml($_item, 'short') ?>
+                </div>
+                <?php echo $this->getPriceHtml($_item, true, '-related') ?>
+
+            </li>
+        <?php endforeach ?>
+        </ol>
+        <script type="text/javascript">
+            decorateList('block-related', 'none-recursive');
+
+            document.observe('dom:loaded', function () {
+                $$('p.product-name-wrap a').each(function(item) {
+                    item.innerHTML = item.innerHTML.truncate(105, "...");
+                });
+
+                if (navigator.userAgent.match(/(iPad|iPhone|iPod)/i)) {
+                    $$('.video-icon').invoke('hide');
+                }
+            });
+        </script>
+    </div>
+</div>
+<?php endif ?>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Oro_Dtm>
+			<active>false</active>
+			<codePool>local</codePool>
+			<version>0.0.1</version>
+			<depends>
+				<Mage_Core />
+				<Mage_Catalog />
+				<Mage_Adminhtml />
+			</depends>
+		</Oro_Dtm>
+	</modules>
+</config>

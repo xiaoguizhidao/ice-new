@@ -1,0 +1,25 @@
+<?php
+/** @var Mage_Catalog_Model_Product $_product */
+$_product = $this->getProduct();
+?>
+<?php $buttonTitle = $this->__('Add to Cart'); ?>
+<?php if ($_product->isSaleable()): ?>
+    <div class="add-to-cart">
+        <?php if (!$_product->isGrouped()): ?>
+            <label for="qty"><?php echo $this->__('Qty:') ?></label>
+            <input type="text" name="qty" id="qty" maxlength="12"
+                   value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Qty') ?>"
+                   class="input-text qty"/>
+        <?php endif; ?>
+        <div class="hr"></div>
+        <button type="button" title="<?php echo $buttonTitle ?>" class="button primary-button btn-cart"
+                onclick="productAddToCartForm.submit(this)"><span><?php echo $buttonTitle ?> &raquo;</span>
+        </button>
+        <?php if($this->helper('wishlist')->isAllow()): ?>
+            <a href="<?php echo $this->helper('wishlist')->getAddUrl($_product); ?>" class="link-wishlist" onclick="productAddtoCartForm.submitLight(this, this.href); return false;">
+                <?php echo $this->__("Add to Wishlist"); ?>
+            </a>
+        <?php endif; ?>
+        <?php //echo $this->getChildHtml('', true, true) ?>
+    </div>
+<?php endif; ?>

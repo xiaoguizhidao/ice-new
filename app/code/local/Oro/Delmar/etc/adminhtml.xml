@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <delmar translate="title" module="delmar">
+                                        <title>Delmar Integration</title>
+                                    </delmar>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <delmar translate="title" module="sales">
+                        <title>Delmar</title>
+                        <children>
+                            <shipment translate="title">
+                                <title>Shipment</title>
+                                <children>
+                                    <approve translate="title">
+                                        <title>Actions</title>
+                                    </approve>
+                                </children>
+                            </shipment>
+                        </children>
+                    </delmar>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

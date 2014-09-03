@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Oro_Diamondcandles>
+            <active>false</active>
+            <codePool>local</codePool>
+        </Oro_Diamondcandles>
+    </modules>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+		<!-- Oro_DataLayer -->
+		<reference name="head">
+			<block type="datalayer/datalayer_output" before="-" name="datalayer_output" template="datalayer/datalayer.phtml" />
+		</reference>
+	</default>
+</layout>

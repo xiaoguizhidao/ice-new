@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <menu>
+        <system>
+            <children>
+                <amorderattach translate="title">
+                    <title>Order Memos And Attachments</title>
+                    <action>amorderattach/adminhtml_field</action>
+                    <sort_order>110</sort_order>
+                </amorderattach>
+            </children>
+        </system>
+    </menu>
+    
+    <translate>
+        <modules>
+            <Amasty_Orderattach>
+                <files>
+                    <default>Amasty_Orderattach.csv</default>
+                </files>
+            </Amasty_Orderattach>
+        </modules>
+    </translate>
+    
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <sales module="sales">
+                        <children>
+                            <order>
+                                <children>
+                                    <actions translate="title">
+                                        <title>Actions</title>
+                                        <children>
+                                            <edit_memos translate="title"><title>Edit Order Memos and Attacments</title></edit_memos>
+                                        </children>
+                                    </actions>
+                                </children>
+                            </order>
+                        </children>
+                    </sales>
+                    
+                    <system>
+                        <children>
+                            <amorderattach translate="title">
+                                <title>Order Memos And Attachments</title>
+                                <sort_order>29</sort_order>
+                            </amorderattach>
+                            <config>
+                                <children>
+                                    <amorderattach translate="title" module="amorderattach">
+                                        <title>Order Memos And Attachments</title>
+                                    </amorderattach>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

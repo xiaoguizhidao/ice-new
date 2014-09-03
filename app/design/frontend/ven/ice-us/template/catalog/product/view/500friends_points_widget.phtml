@@ -1,0 +1,17 @@
+<?php
+/** @var Mage_Catalog_Model_Product $_product */
+$_product = $this->getProduct();
+?>
+
+<?php if(Mage::getStoreConfigFlag('payment_services/fhfriends/active')): ?>
+    <script type="text/javascript" src="https://d3aa0ztdn3oibi.cloudfront.net/javascripts/ff.loyalty.widget.js"></script>
+    <script type="text/javascript">
+        _ffLoyalty.displayWidget("YNIX3Ys8kC", <?php echo json_encode(array(
+                'image_url' => 'http://images1.ice.com/ice/product/images/BSW/BSW_024935_b_l-6-7mm_Button_Cultured_Freshwater_Pearl_and_Onyx_Sterling_Silver_Heart_Bracelet.jpg',
+                'title' => $_product->getSku(),
+                'subject' => 'Ice Product',
+                'description' => $_product->getName(),
+                'message' => 'Share Ice Jewelry!'
+            )) ?>);
+    </script>
+<?php endif; ?>

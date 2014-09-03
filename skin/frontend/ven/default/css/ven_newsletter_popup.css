@@ -1,0 +1,154 @@
+/* Newsletter popup ============================================================================ */
+#popup-newsletter .privacy-policy-link {
+    margin-top: 8px;
+    display: block;
+    clear: both;
+    float:left;
+}
+
+#popup-newsletter-form-wrapper:after {
+    display: block;
+    content: ".";
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+#newsletter-popup-validate-detail .validation-advice {
+    top: 192px;
+    left: 25px;
+    max-width: 200px;
+}
+
+.popup-block.popup-newsletter .block-subscribe .input-box {
+    float: left;
+}
+
+.popup-block.popup-newsletter .block-subscribe input,
+.popup-block.popup-newsletter .block-subscribe button {
+    float: left;
+}
+
+.popup-block.popup-newsletter .block-subscribe button {
+    position: relative;
+    bottom: -3px;
+    float: right;
+}
+
+.popup-block.popup-newsletter .block-subscribe input {
+    width: 185px !important;
+    margin-right: 8px;
+    padding: 2px;
+    border: 2px solid transparent;
+}
+
+.popup-block.popup-newsletter .block-subscribe input:focus {
+    border: 2px solid #95D28C;
+}
+
+/* Ajax preloader ============================================================================== */
+.ajax-preloader {
+    background: url(../images/ajax-loader.gif) no-repeat center;
+    width: 330px;
+    height: 190px;
+}
+
+.ajax-preloader span {
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+}
+
+/* Popup - Blocks base styles ================================================================== */
+.popup-overlay {
+    position: fixed;
+    z-index: 888;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.65;
+    -webkit-opacity: 0.65;
+    -moz-opacity: 0.65;
+    filter: alpha(opacity = 65);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+    background: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.popup-block {
+    color: #fff;
+    padding: 0 25px;
+    text-align: left;
+}
+
+
+.popup-block-wrapper-newsletter-top_bg {
+    position: fixed;
+    background: url(../images/bg-popup-part-1.png) no-repeat top center;
+    width: 380px;
+    top: 50%;
+    left: 50%;
+    margin-left: -165px; /* negative half of width above */
+    margin-top: -122px; /* negative half of height above */
+    z-index: 9999 !important;
+}
+
+.popup-block-wrapper-newsletter-bottom_bg {
+    background: url(../images/bg-popup-part-3.png) no-repeat bottom center;
+    border: 1px solid transparent;
+    zoom: 1;
+}
+
+.popup-newsletter {
+    margin: 15px 0;
+    background: url(../images/bg-popup-part-2.png) repeat-y center;
+}
+
+.popup-block .btn-close {
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(../images/btn-close.png) no-repeat;
+    cursor: pointer;
+}
+
+.popup-block a {
+    text-decoration: underline;
+    color: #B5B5B5;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.popup-block h1 {
+    margin: 0 0 17px 2px;
+    font-size: 26px;
+    line-height: 29px;
+    color: #95D28C;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.popup-block h4 {
+    font: 12px/15px "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #95D28C;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #95D28C;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.popup-block h4 span {
+    color: #fff;
+}
+

@@ -1,0 +1,39 @@
+<?php
+/**
+ * Category layered navigation state
+ *
+ * @see Mage_Catalog_Block_Layer_State
+ */
+?>
+<?php $_filters = $this->getActiveFilters() ?>
+
+<?php if(!empty($_filters) && $_filters>0): ?>
+    <div class="currently-actions actions">
+        <h2><?php echo $this->__('Selection') ?></h2>
+        <a rel="nofollow" href="<?php echo $this->getClearUrl() ?>"><?php echo $this->__('Clear All') ?></a>
+        <div class="clear"> </div>
+    </div>
+
+    <div class="block block-layered-nav block-layered-added">
+        <div class="block-content">
+            <div class="currently">
+                <p class="block-subtitle"><?php echo $this->__('Currently Shopping by:') ?></p>
+                <ol>
+                <?php foreach ($_filters as $_filter): ?>
+                    <li>
+                        <?php
+                            $clearLinkUrl = $_filter->getClearLinkUrl();
+                            if ($clearLinkUrl):
+                        ?>
+                            <a rel="nofollow" class="btn-previous" href="<?php echo $_filter->getRemoveUrl() ?>" title="<?php echo $this->__('Previous') ?>"><?php echo $this->stripTags($_filter->getLabel()) ?></a>
+                            <a rel="nofollow" class="btn-remove" title="<?php echo $this->escapeHtml($_filter->getFilter()->getClearLinkText()) ?>" href="<?php echo $clearLinkUrl ?>"><?php echo $this->stripTags($_filter->getLabel()) ?></a>
+                        <?php else: ?>
+                            <a rel="nofollow" class="btn-remove" href="<?php echo $_filter->getRemoveUrl() ?>" title="<?php echo $this->__('Remove This Item') ?>"><?php echo $this->stripTags($_filter->getLabel()) ?></a>
+                        <?php endif; ?>
+                    </li>
+                <?php endforeach; ?>
+                </ol>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>

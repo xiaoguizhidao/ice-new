@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Oro_Betterest>
+      <active>false</active>
+      <codePool>local</codePool>
+    </Oro_Betterest>
+  </modules>
+</config>
+

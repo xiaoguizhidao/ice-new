@@ -1,0 +1,40 @@
+.html-sitemap .sitemap-products >li {
+    margin-left: 2em;
+}
+
+.html-sitemap .sitemap-categories >li {
+    margin: 3px 0 3px 20px;
+}
+
+.html-sitemap .sitemap-categories li a {
+    font-size: 12px;
+    line-height:14px;
+    color: #4C4C4C;
+    text-decoration: underline;
+}
+
+.html-sitemap.tree .sitemap-categories li.first {
+    margin-top: 5px;
+}
+
+.html-sitemap.tree .sitemap-categories li.level-1 {
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.html-sitemap.tree .sitemap-categories li.level-1 a {
+    font-size: 14.3px;
+    font-weight: 700;
+}
+
+.html-sitemap.tree .sitemap-categories li.level-2 {
+    margin-left: 40px;
+}
+
+.html-sitemap.tree .sitemap-categories li.level-3 {
+    margin-left: 60px;
+}
+
+.html-sitemap.tree .sitemap-categories li.level-4 {
+    margin-left: 80px;
+}

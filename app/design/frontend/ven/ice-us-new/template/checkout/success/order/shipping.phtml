@@ -1,0 +1,33 @@
+<?php 
+		$_shipping = $this->getOrder()->getShippingAddress();
+?>
+<table class="order-information shipping-info">
+	<tbody>
+		<tr>
+			<th>Shipping Address:</th>
+		</tr>
+		<tr>
+			<td class="full-name"><?php echo $_shipping->getName(); ?></td>
+		</tr>
+		<tr>
+				<td class="street-address"><?php echo $_shipping->getStreet1(); ?></td>
+		</tr>
+		<?php if($_shipping->getStreet2()): ?>
+		<tr>
+				<td class="stree-address"><?php echo $_shipping->getStreet2(); ?></td>
+		</tr>
+
+		<?php endif; ?>
+		<tr>
+				<td class="city-state-zip">
+						<?php echo $_shipping->getCity(); ?>, <?php echo $_shipping->getRegion() ?> <?php echo $_shipping->getPostcode(); ?>, <?php echo $_shipping->getCountry(); ?>
+				</td>
+		</tr>
+		<tr>
+				<td class="email-address"><?php echo $_shipping->getEmail(); ?></td>
+		</tr>
+		<tr>
+				<td class="phone-number"><?php echo $_shipping->getTelephone(); ?></td>
+		</tr>
+	</tbody>
+</table>

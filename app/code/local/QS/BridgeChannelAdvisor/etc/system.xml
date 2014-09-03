@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   QS
+ * @package    QS_BridgeChannelAdvisor
+ * @copyright  Copyright (c) 2013 QuartSoft (http://www.quartsoft.com)
+ */
+-->
+<config>
+    <sections>
+        <bridgechanneladvisor translate="label" module="bridgechanneladvisor">
+            <label>QS ChannelAdvisor</label>
+            <tab>service</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <license translate="label" module="bridgechanneladvisor">
+                    <label>License</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <ca_license translate="label">
+                            <label>ChannelAdvisor Module License</label>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </ca_license>
+                        <ca_license_check translate="button_label">
+                            <label></label>
+                            <frontend_type>button</frontend_type>
+                            <button_label>Check License</button_label>
+                            <frontend_model>bridgechanneladvisor/adminhtml_system_config_caLicense</frontend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </ca_license_check>
+                    </fields>
+                </license>
+                <bridgechanneladvisor translate="label" module="bridgechanneladvisor">
+                    <label>Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <local_id translate="label">
+                            <label>ChannelAdvisor Profile ID</label>
+                            <autocomplete>off</autocomplete>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[<div style="margin-bottom:10px;">To get developer Access to ChannelAdvisor Profile ID , please visit <a href="http://developer.channeladvisor.com/display/cadn/Understanding+Security" target="_blank" style="margin-left:0;">ChannelAdvisor Security</a></div>]]></comment>
+                        </local_id>
+                        <account_id translate="label">
+                            <label>ChannelAdvisor Account ID</label>
+                            <autocomplete>off</autocomplete>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </account_id>
+                        <dev_key translate="label">
+                            <label>Developer Key</label>
+                            <autocomplete>off</autocomplete>
+                            <frontend_type>text</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </dev_key>
+                        <dev_password translate="label">
+                            <label>Developer Password</label>
+                            <autocomplete>off</autocomplete>
+                            <frontend_type>obscure</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </dev_password>
+                        <ca_account translate="button_label">
+                            <label></label>
+                            <frontend_type>button</frontend_type>
+                            <button_label>Get API credentials</button_label>
+                            <frontend_model>bridgechanneladvisor/adminhtml_system_config_caAccount</frontend_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ca_account>
+                        <protocol translate="label">
+                            <label>Protocol Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>bridgechanneladvisor/system_config_source_protocol</source_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </protocol>
+                    </fields>
+                </bridgechanneladvisor>
+                <cadata translate="label">
+                    <label>Main settings for sync process</label>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <direction translate="label">
+                            <label>Direction</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>bridgechanneladvisor/system_config_source_direction</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </direction>
+                        <taxable translate="label">
+                            <label>Tax class for imported products</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>bridgechanneladvisor/system_config_source_tax</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </taxable>
+                        <exportActive translate="label">
+                            <label>Enable Export Orders to ChannelAdvisor</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </exportActive>
+                        <importActive translate="label">
+                            <label>Enable Import Orders from ChannelAdvisor</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </importActive>
+                        <orderProcessing translate="label">
+                            <label>Enable sending new qty to ChannelAdvisor on Place Order</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <comment><![CDATA[If "Yes" then new products quantity will be send each time new order creates, or refunds. Works only if Export orders set "No". Not depends from Direction. ]]></comment>
+                        </orderProcessing>
+                        <import translate="label">
+                          <label>Import all ChannelAdvisor Attributes</label>
+                          <frontend_type>import</frontend_type>
+                          <backend_model>bridgechanneladvisor/config</backend_model>
+                          <sort_order>40</sort_order>
+                          <show_in_default>1</show_in_default>
+                          <show_in_website>1</show_in_website>
+                          <show_in_store>1</show_in_store>
+                        </import>
+                        <relationships translate="label">
+                          <label>Upload ChannelAdvisor Variation Relationships</label>
+                          <frontend_type>import</frontend_type>
+                          <backend_model>bridgechanneladvisor/config</backend_model>
+                          <sort_order>45</sort_order>
+                          <show_in_default>1</show_in_default>
+                          <show_in_website>1</show_in_website>
+                          <show_in_store>1</show_in_store>
+                        </relationships>
+                    </fields>
+                </cadata>
+                <caupdset translate="label">
+                    <label>ChannelAdvisor Update/Insert Products Settings</label>
+                    <sort_order>35</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <fields>
+                        <updateRule translate="label">
+                            <label>Create new products during update from CA</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>31</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </updateRule>
+                        <allCreate translate="label">
+                            <label>Add all new products into Magento DB</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>bridgechanneladvisor/system_config_source_flagset</source_model>
+                            <sort_order>31</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Use only if new products creating is enabled during update process]]></comment>
+                        </allCreate>
+                        <updateFlag translate="label">
+                            <label>Update products with this flag</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>bridgechanneladvisor/system_config_source_flags</source_model>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Products with this flag will be imported from CA. Use only if flag uses is set]]></comment>
+                        </updateFlag>
+                        <categoryRule translate="label">
+                            <label>Use custom field to use it for category mapping</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </categoryRule>
+                        <categoryAttribute translate="label">
+                            <label>CA Attribute with Category ID</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>bridgechanneladvisor/system_config_source_attrs</source_model>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[During Import process (creating new products) module will get value from this attribute and will insert product into Magento Category with same ID if Category exist. Working only if previous setting is enable. Please for correct work use ',' as separator.]]></comment>
+                        </categoryAttribute>
+                    </fields>
+                </caupdset>
+                <importemail translate="label">
+                    <label>ChannelAdvisor Debug Information</label>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <fields>
+                        <supercheck translate="label">
+                            <label>Enable check mapping for Magento Super Attributes</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </supercheck>
+                        <caimportemail translate="label">
+                            <label>All process log email addresses</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <comment><![CDATA[<div style="margin-bottom:10px;">Use ";" to separate email addresses</div>]]></comment>
+                        </caimportemail>
+                        <notifyActive translate="label">
+                            <label>Enable notification email sending</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </notifyActive>
+                        <!--notifyUpdate translate="label">
+                            <label>Enable email sending for update</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </notifyUpdate-->
+                        <logActive translate="label">
+                            <label>Enable log files</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                        </logActive>
+                        <email_template translate="label">
+                            <label>Notification Email Template</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_template</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                       </email_template>
+                    </fields>
+                </importemail>
+            </groups>
+        </bridgechanneladvisor>
+        <carriers>
+            <groups>
+                <bridgechanneladvisor translate="label" module="bridgechanneladvisor">
+                    <label>ChannelAdvisor Rate</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>99</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                    </fields>
+                </bridgechanneladvisor>
+            </groups>
+        </carriers>
+        <payment>
+            <groups>
+                <channeladvisor_payment translate="label" module="bridgechanneladvisor">
+                    <label>ChannelAdvisor Payment</label>
+                    <sort_order>700</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                    </fields>
+                </channeladvisor_payment>
+            </groups>
+        </payment>
+    </sections>
+</config>

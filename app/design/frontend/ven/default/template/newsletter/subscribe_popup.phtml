@@ -1,0 +1,27 @@
+<?php
+/** @var $this Ven_Newsletter_Block_Subscribe_Popup */
+?>
+
+<?php if ($cms_newsletter_popup = $this->getChildHtml('cms_newsletter_popup')): ?>
+
+<div id="popup-newsletter" class="popup-block popup-newsletter" style="display: none;">
+    <form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="newsletter-popup-validate-detail">
+        <a href="#" id="btn-close" class="btn-close">Close</a>
+        <div id="popup-newsletter-form-wrapper">
+            <?php echo $cms_newsletter_popup; ?>
+        </div>
+        <div id="popup-newsletter-form-wrapper-success" style="display: none;">
+            <?php echo $this->getChildHtml('cms_newsletter_popup_success'); ?>
+        </div>
+        <div id="popup-newsletter-ajax-preloader" class="ajax-preloader" style="display: none;">
+            <span><?php echo $this->__("Loading..."); ?></span>
+        </div>
+    </form>
+</div>
+
+<div id="popup-overlay" class="popup-overlay" style="display: none;"> </div>
+
+<script type="text/javascript">
+    var newsletterAjaxForm  = new VenNewsletterPopupAjaxForm('newsletter-popup-validate-detail', 'newsletter-popup-value');
+</script>
+<?php endif; ?>

@@ -1,0 +1,24 @@
+{
+    "name": "ice/ice_com",
+    "minimum-stability": "dev",
+    "description":" ",
+    "license":"proprietary",
+    "require": {
+            "behat/behat": "*",
+            "n98/magerun": "*",
+            "aws/aws-sdk-php": "dev-master",
+        "behat/mink-extension": "*"
+    },
+    "require-dev": {
+        "symfony/http-kernel": "*",
+        "doctrine/cache": "*",
+        "monolog/monolog": "*",
+        "symfony/proxy-manager-bridge": "*",
+        "psr/log": "*",
+        "doctrine/annotations": "*",
+        "symfony/http-foundation": "*",
+        "symfony/intl": "*",
+        "symfony/property-access": "*",
+        "symfony/expression-language": "*"
+    }
+}

@@ -1,0 +1,10 @@
+<?php
+	$_order = Mage::getModel('sales/order')->loadByIncrementId($this->getOrderId()); 
+?>
+<ul>
+	<?php foreach($this->getChild() as $_child): ?>
+		<li>
+		<?php echo $_child->setData('order', $_order)->toHtml(); ?>
+		</li>
+	<?php endforeach; ?>
+</ul>

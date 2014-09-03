@@ -1,0 +1,37 @@
+<?php
+/**
+ * @var $this Mage_Catalog_Block_Product_View
+ * @var $currentCategory Ven_Content_Model_Category
+ */
+?>
+<div class="product-options" id="product-options-wrapper">
+    <?php echo $this->getChildHtml('', true, true);?>
+    <?php if ($this->hasRequiredOptions()):?>
+        <p class="required"><?php echo $this->__('* Required Fields') ?></p>
+    <?php endif;?>
+    <?php
+
+        // check whether Ring Size is present in list of configurable attributes of current product
+
+        /* @var $configurable_attributes Mage_Catalog_Model_Resource_Product_Type_Configurable_Attribute_Collection */
+        /* @var $attr Mage_Catalog_Model_Resource_Product_Type_Configurable_Attribute */
+
+        $ring_size_present = false;
+
+        $configurable_attributes = $this->getProduct()->getTypeInstance(true)->getConfigurableAttributes($this->getProduct());
+        foreach ($configurable_attributes as $attr) {
+            if ("iceus_ring_size"  == $attr->getProductAttribute()->getAttributeCode() ) {
+                $ring_size_present = true;
+                break;
+            }
+        }
+
+        // render ring sizes help link if it's needed
+    ?>
+    <?php if ($ring_size_present): // Check category ?>
+        <div class="product-options-additional-link">
+            <a href="<?php echo $this->getUrl('customer-service/ring-sizer') ?>" target="_blank"><?php echo $this->__('Ring size chart') ?></a>
+        </div>
+    <?php endif; ?>
+</div>
+<script type="text/javascript">decorateGeneric($$('#product-options-wrapper dl'), ['last']);</script>

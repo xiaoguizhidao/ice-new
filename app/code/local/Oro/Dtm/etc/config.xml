@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Oro_Dtm>
+            <version>0.1.0</version>
+        </Oro_Dtm>
+    </modules>
+    <global>
+
+        <helpers>
+            <dtm>
+                <class>Oro_Dtm_Helper</class>
+            </dtm>
+        </helpers>
+
+        <models>
+            <dtm>
+                <class>Oro_Dtm_Model</class>
+            </dtm>
+        </models>
+
+        <blocks>
+            <dtm>
+                <class>Oro_Dtm_Block</class>
+            </dtm>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <dtm>
+                    <file>oro/dtm.xml</file>
+                </dtm>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <dtm>
+            <settings>
+                <production_subdomains>www</production_subdomains>
+            </settings>
+        </dtm>
+    </default>
+</config> 

@@ -1,0 +1,8 @@
+<?php if(Mage::helper('dtm/data')->isDtmEnabled(Mage::app()->getStore())): ?>
+<!-- DTM End -->
+<script>
+if(typeof _satellite != 'undefined'){
+	_satellite.pageBottom();
+}
+</script>
+<?php endif; ?>

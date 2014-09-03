@@ -1,0 +1,50 @@
+<?php
+  $_products = $this->getOrder()->getAllVisibleItems();
+  $_product = $_products[0]->getProduct();
+  $_prodUrl = $_product->getProductUrl();
+  $_prodImg = Mage::helper('catalog/image')->init($_product, 'image');
+  $_prodName = $_product->getName();
+  $_prodText = urlencode("View the ". $_prodName." at Ice.com");
+  $_sendToFriendModel = Mage::getModel('sendfriend/sendfriend');
+  $_canEmailToFriend =  $_sendToFriendModel && $_sendToFriendModel->canEmailToFriend();
+?>
+<div class="section active allow">
+  <div class="step-title">
+    <h2>Share Your Purchase</h2>
+  </div>
+  <div class="order-confirm-social-share clearer">
+  	<ul>
+  		<li>
+  			<a href="https://twitter.com/share?url=<?php echo $_prodUrl; ?>&text=<?php echo $_prodText; ?>">
+  				<img src="<?php echo $this->getSkinUrl('images/icons/purchase/twitter-purchase.png'); ?>" alt="<?php echo $this->__('Twitter'); ?>">
+  			</a>
+ 			</li>
+  		<li>
+  			<a href="https://www.facebook.com/sharer/sharer.php?s=100&p[title]=<?php echo $_prodName;?>&p[url]=<?php echo $_prodUrl; ?>&p[images][0]=<?php echo $_prodImg ?>&p[summary]=<?php echo $_prodText; ?>" target="_blank">
+  				<img src="<?php echo $this->getSkinUrl('images/icons/purchase/facebook-purchase.png'); ?>" alt="<?php echo $this->__('Facebook'); ?>">
+  			</a>
+ 			</li>
+  		<li>
+  			<a href="https://plus.google.com/share?url=<?php echo $_prodUrl; ?>">
+  				<img src="<?php echo $this->getSkinUrl('images/icons/purchase/google-plus-purchase.png'); ?>" alt="<?php echo $this->__('Google+'); ?>">
+  			</a>
+ 			</li>
+      <?php if ($_canEmailToFriend): ?>
+  		<li>
+  			<a href="<?php echo Mage::helper('catalog/product')->getEmailToFriendUrl($_product) ?>">
+  				<img src="<?php echo $this->getSkinUrl('images/icons/purchase/email-purchase.png'); ?>" alt="<?php echo $this->__("Email a Friend"); ?>">
+  			</a>
+ 			</li>
+      <?php endif; ?>
+  	</ul>
+  </div>
+</div>
+<script>
+jQuery(function($){
+  $('.order-confirm-social-share a').on('click', function(e){
+    e.preventDefault();
+    var popupHref = $(this).attr('href');
+    window.open(popupHref, '', 'width=675,height=300');
+  })
+});
+</script>

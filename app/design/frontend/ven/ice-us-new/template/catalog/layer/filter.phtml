@@ -1,0 +1,32 @@
+<?php
+/**
+ * Template for filter items block
+ *
+ * @var $this Mage_Catalog_Block_Layer_Filter_Price
+ */
+$i                 = 0;
+$_limitForMoreLink = 5;
+?>
+<ol>
+<?php foreach ($this->getItems() as $_item): ?>
+    <?php
+        /** @var $_item Mage_Catalog_Model_Layer_Filter_Item */
+        $i++;
+        $className = ($i <= $_limitForMoreLink) ? "" : " class='lnav-hidden'";
+    ?>
+    <li<?php echo $className; ?>>
+        <?php if ($_item->getCount() > 0): ?>
+        <a rel="nofollow" href="<?php echo $this->urlEscape($_item->getUrl()) ?>"><?php echo $_item->getLabel() ?></a>
+        <?php else: ?>
+        <?php echo $_item->getLabel(); ?>
+        <?php endif; ?>
+        <?php if ($this->shouldDisplayProductCount()): ?>
+        <span class="counter">(<?php echo $_item->getCount() ?>)</span>
+        <?php endif; ?>
+    </li>
+<?php endforeach ?>
+<?php if ($i > $_limitForMoreLink) : ?>
+    <li class="more-link"><a><?php echo __("More..."); ?></a></li>
+    <li class="less-link"><a><?php echo __("Less..."); ?></a></li>
+<?php endif; ?>
+</ol>

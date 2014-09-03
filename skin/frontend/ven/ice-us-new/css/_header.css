@@ -1,0 +1,92 @@
+.status-bar {
+  line-height: 25px;
+  font-size: 14px;
+  clear: both;
+  text-align: left;
+  overflow: hidden;
+  color: #373737;
+}
+/* line 308, ../sass/_header.scss */
+.status-bar span.additional-links {
+  float: right;
+  margin-right: 30px;
+}
+/* line 311, ../sass/_header.scss */
+.status-bar span.additional-links a {
+  padding: 10px 10px 10px 25px;
+  display: inline-block;
+  color: #373737;
+}
+/* line 318, ../sass/_header.scss */
+.status-bar span.contact-links {
+  padding: 10px 0;
+  float: left;
+}
+/* line 321, ../sass/_header.scss */
+.status-bar span.contact-links span {
+  padding: 5px 5px 5px 25px;
+  display: inline-block;
+  background-position: left 8px;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
+/* line 328, ../sass/_header.scss */
+.status-bar span.contact-links .phone {
+  background-image: url(../images/phone-icon.png);
+}
+/* line 331, ../sass/_header.scss */
+.status-bar span.contact-links .live-chat {
+  background-image: url(../images/live-chat-icon.png);
+  padding-left: 35px;
+}
+/* line 336, ../sass/_header.scss */
+.status-bar a:hover {
+  color: #4C4C4C;
+}
+/* line 339, ../sass/_header.scss */
+.status-bar .system-links li:first-child {
+  display: block;
+  border-left: 1px solid #95D28C;
+  padding-left: 30px;
+  line-height: 14px;
+  margin-top: 5px;
+}
+/* line 347, ../sass/_header.scss */
+.status-bar .system-links,
+.status-bar .system-links li {
+  float: right;
+}
+/* line 350, ../sass/_header.scss */
+.status-bar .system-links li {
+  width: auto !important;
+}
+/* line 353, ../sass/_header.scss */
+.status-bar p {
+  float: left;
+}
+/* line 356, ../sass/_header.scss */
+.status-bar ul, .status-bar ul * {
+  float: left;
+}
+/* line 360, ../sass/_header.scss */
+.status-bar li {
+  display: inline-block;
+}
+/* line 364, ../sass/_header.scss */
+.status-bar li:first-child {
+  width: 650px;
+}
+/* line 368, ../sass/_header.scss */
+.status-bar li:last-child {
+  float: right;
+}
+/* line 372, ../sass/_header.scss */
+.status-bar li p {
+  margin: 0 10px;
+  color: #95d28c;
+}
+
+/* line 379, ../sass/_header.scss */
+.status-bar, .status-bar a {
+  text-decoration: none;
+}

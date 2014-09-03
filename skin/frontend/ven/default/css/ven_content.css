@@ -1,0 +1,36 @@
+.html-sitemap .sitemap-categories >li {
+    margin: 1em 0 0 2em;
+}
+
+.html-sitemap .sitemap-products >li {
+    margin-left: 2em;
+}
+
+.html-sitemap.tree .sitemap-categories li.level-2 {
+    margin-left: 3em;
+}
+
+.html-sitemap.tree .sitemap-categories li.level-3 {
+    margin-left: 4em;
+}
+
+.html-sitemap.tree .sitemap-categories li.level-4 {
+    margin-left: 5em;
+}
+
+.html-sitemap.tree .sitemap-categories li.level-2 h3 {
+    font-size: 16px;
+}
+
+.html-sitemap.tree .sitemap-categories li.level-3 h4 {
+    font-size: 14px;
+}
+
+.html-sitemap.tree .sitemap-categories li.level-4 h5 {
+    font-size: 13px;
+}
+
+.html-sitemap.tree .sitemap-categories li.level-5 h6 {
+    font-size: 12px;
+}
+

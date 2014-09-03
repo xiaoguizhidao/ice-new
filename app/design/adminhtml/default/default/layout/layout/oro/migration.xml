@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Oro
+ * @package    Oro_Migration
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+-->
+<layout>
+    <adminhtml_migration_index>
+        <reference name="content">
+            <block type="oro_migration/adminhtml_migration" name="dashboard" template="oro/migration.phtml" />
+        </reference>
+    </adminhtml_migration_index>
+</layout>

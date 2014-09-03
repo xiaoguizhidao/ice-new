@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Oro
+ * @package    Oro_Ensighten
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+-->
+<config>
+    <modules>
+        <Oro_Ensighten>
+            <version>0.1.0</version>
+        </Oro_Ensighten>
+    </modules>
+    <global>
+        <models>
+            <oro_ensighten>
+                <class>Oro_Ensighten_Model</class>
+            </oro_ensighten>
+        </models>
+        <blocks>
+            <oro_ensighten>
+                <class>Oro_Ensighten_Block</class>
+            </oro_ensighten>
+        </blocks>
+        <helpers>
+            <oro_ensighten>
+                <class>Oro_Ensighten_Helper</class>
+            </oro_ensighten>
+        </helpers>
+        <!--
+        <resources>
+            <oro_ensighten_setup>
+                <setup>
+                    <module>Oro_Ensighten</module>
+                </setup>
+            </oro_ensighten_setup>
+        </resources>
+        -->
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <oro_ensighten>
+                    <file>oro/ensighten.xml</file>
+                </oro_ensighten>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <oro_ensighten>
+            <general>
+                <bootstrap_uri>//nexus.ensighten.com/ice/Bootstrap.js</bootstrap_uri>
+            </general>
+        </oro_ensighten>
+    </default>
+</config>

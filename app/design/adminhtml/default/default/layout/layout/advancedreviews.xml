@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <advancedreviews_admin_adminhtml_abuse_index>
+        <reference name="content">
+            <block type="advancedreviews/adminhtml_abuse" name="abuse" />
+        </reference>
+    </advancedreviews_admin_adminhtml_abuse_index>
+    <advancedreviews_admin_adminhtml_proscons_pros>
+        <reference name="content">
+            <block type="advancedreviews/adminhtml_proscons" name="proscons" />
+        </reference>
+    </advancedreviews_admin_adminhtml_proscons_pros>
+    <advancedreviews_admin_adminhtml_proscons_cons>
+        <reference name="content">
+            <block type="advancedreviews/adminhtml_proscons" name="proscons" />
+        </reference>
+    </advancedreviews_admin_adminhtml_proscons_cons>
+    <advancedreviews_admin_adminhtml_proscons_user>
+        <reference name="content">
+            <block type="advancedreviews/adminhtml_proscons_user" name="proscons" />
+        </reference>
+    </advancedreviews_admin_adminhtml_proscons_user>
+</layout>

@@ -1,0 +1,11 @@
+<?php /* @var $this VenProject_IceUS_Block_Catalog_Product_Social */ ?>
+<?php
+
+$productUrl = urlencode($this->getCanonicalUrl());
+$productName = urlencode($this->getProduct()->getName());
+$productImage = urlencode($this->getProductImage());
+
+?>
+<a href="//www.pinterest.com/pin/create/button/?url=<?php echo $productUrl ?>&media=<?php echo $productImage ?>&description=<?php echo $productName ?>"
+   data-pin-do="buttonPin" data-pin-config="none"><img
+        src="//assets.pinterest.com/images/pidgets/pin_it_button.png"/></a>

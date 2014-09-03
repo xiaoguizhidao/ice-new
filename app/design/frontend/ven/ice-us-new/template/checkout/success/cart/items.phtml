@@ -1,0 +1,83 @@
+<?php
+	$_coreHelper = Mage::helper('core');
+	$_order = $this->getOrder();
+?>
+<div class="section active allow">
+	<div class="step-title">
+		<h2><?php echo $this->__('Your Items'); ?></h2>
+	</div>
+	<div class="order-confirm-purchased-items-wrapper clearer">
+		<ul>
+			<?php foreach($this->getOrder()->getAllVisibleItems() as $_item): ?>
+				<?php $_prod = $_item->getProduct(); ?>
+				<li>
+					<table class="order-confirm-purchased-items">
+						<tbody>
+							<tr>
+								<td rowspan="3" class="product-image">
+									<img height="82" width="82" src="<?php echo $_prod->getThumbnailUrl(); ?>" alt="<?php echo $this->escapeHtml($_prod->getName()); ?>" />
+								</td>
+								<td rowspan="3" class="product-title">
+									<?php echo $_prod->getName(); ?>
+								</td>
+								<th class="product-qty-label">Qty:</th>
+								<td class="product-qty"><?php echo $_item->getQtyToShip() ?></td>
+							</tr>
+							<tr>
+								<th class="product-price-label">Price:</th>
+								<td class="product-price">
+									<?php echo $_coreHelper->currency($_prod->getFinalPrice(), true, false); ?>
+								</td>
+							</tr>
+							<tr>
+								<th class="product-total-label">Total:</th>
+								<td class="product-total">
+									<?php echo $_coreHelper->currency(($_prod->getFinalPrice() * $_item->getQtyToShip()), true, false); ?>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</li>
+			<?php endforeach; ?>
+		</ul>
+
+		<div class="order-confirm-total">
+			<table>
+				<tbody>
+					<tr class="subtotal">
+						<th>Subtotal:</th>
+						<td>
+							<?php echo $_coreHelper->currency($_order->getSubtotal(), true, false); ?>
+						</td>
+					</tr>
+					<tr class="tax">
+						<th>Tax:</th>
+						<td>
+							<?php $_taxAmt = $_order->getShippingAddress()->getTaxAmount(); ?>
+							<?php echo $_coreHelper->currency($_taxAmt, true, false); ?>
+						</td>
+					</tr>
+					<tr class="shipping">
+						<th>Shipping</th>
+						<td>
+							<?php echo $_coreHelper->currency($_order->getShippingAmount(), true, false); ?>
+						</td>
+					</tr>
+					<?php if($_order->getDiscountAmount() > 0): ?>
+					<tr class="discount-amount">
+						<th>Discount</th>
+						<td>
+							<?php echo $_coreHelper->currency($_order->getDiscountAmount(), true, false); ?>
+					</tr>
+					<?php endif; ?>
+					<tr class="grand-total">
+						<th>Grand Total:</th>
+						<td>
+							<?php echo $_coreHelper->currency($_order->getGrandTotal(), true, false); ?>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

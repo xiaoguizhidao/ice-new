@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Oro_Datalayer>
+            <version>0.1.0</version>
+        </Oro_Datalayer>
+    </modules>
+
+    <global>
+
+        <helpers>
+            <datalayer>
+                <class>Oro_Datalayer_Helper</class>
+            </datalayer>
+        </helpers>
+
+        <models>
+            <datalayer>
+                <class>Oro_Datalayer_Model</class>
+            </datalayer>
+        </models>
+
+        <blocks>
+            <datalayer>
+                <class>Oro_Datalayer_Block</class>
+            </datalayer>
+        </blocks>
+
+
+        <events>
+            <!-- CMS Page View -->
+            <controller_action_predispatch_cms_page_view>
+                <observers>
+                    <data_layer_cms_page_observer>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>cmsPageHook</method>
+                    </data_layer_cms_page_observer>
+                </observers>
+            </controller_action_predispatch_cms_page_view>
+
+            <controller_action_predispatch_cms_index_index>
+                <observers>
+                    <data_layer_cms_page_observer>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>homePageHook</method>
+                    </data_layer_cms_page_observer>
+                </observers>
+            </controller_action_predispatch_cms_index_index>
+
+            <!-- Product page datalayer hook -->
+            <controller_action_predispatch_catalog_product_view>
+                <observers>
+                    <datalayer_product_page_observer>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>productPageHook</method>
+                    </datalayer_product_page_observer>
+                </observers>
+            </controller_action_predispatch_catalog_product_view>
+
+            <!-- Category page datalayer hook -->
+            <controller_action_predispatch_catalog_category_view>
+                <observers>
+                    <datalayer_category_page_observer>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>categoryPageHook</method>
+                    </datalayer_category_page_observer>
+                </observers>
+            </controller_action_predispatch_catalog_category_view>
+            <!-- Search results datalayer hook -->
+            <controller_action_predispatch_catalogsearch_result_index>
+                <observers>
+                    <datalayer_search_page_observer>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>searchPageHook</method>
+                    </datalayer_search_page_observer>
+                </observers>
+            </controller_action_predispatch_catalogsearch_result_index>
+            <controller_action_predispatch_catalogsearch_advanced_result>
+                <observers>
+                    <datalayer_search_page_observer>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>advancedSearchPageHook</method>
+                    </datalayer_search_page_observer>
+                </observers>
+            </controller_action_predispatch_catalogsearch_advanced_result>
+
+            <!-- OnePage Checkout -->
+            <controller_action_predispatch_checkout_onepage_index>
+                <observers>
+                    <datalayer_onepage_checkout_observer>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>checkoutOnepageHook</method>
+                    </datalayer_onepage_checkout_observer>
+                </observers>
+            </controller_action_predispatch_checkout_onepage_index>
+
+            <!-- Cart datalayer hook -->
+            <controller_action_predispatch_checkout_cart_index>
+                <observers>
+                    <datalayer_cart_page_observer>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>cartPageHook</method>
+                    </datalayer_cart_page_observer>
+                </observers>
+            </controller_action_predispatch_checkout_cart_index>
+
+            <sales_quote_add_item>
+                <observers>
+                    <dataLayer_cart_add_observer>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>cartAddHook</method>
+                    </dataLayer_cart_add_observer>
+                </observers>
+            </sales_quote_add_item>
+
+            <sales_quote_remove_item>
+                <observers>
+                    <dataLayer_cart_add_observer>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>cartRemoveHook</method>
+                    </dataLayer_cart_add_observer>
+                </observers>
+            </sales_quote_remove_item>
+
+
+            <checkout_onepage_controller_success_action>
+                <observers>
+                    <datalayer_onepage_controller_success_obeserver>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>orderCompleteHook</method>
+                    </datalayer_onepage_controller_success_obeserver>
+                </observers>
+            </checkout_onepage_controller_success_action>
+
+            <!-- Newsletter Signup Success -->
+            <newsletter_subscriber_save_commit_after>
+                <observers>
+                    <datalayer_newsletter_signup>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>newsletterSuccessfulSignupHook</method>
+                    </datalayer_newsletter_signup>
+                </observers>
+            </newsletter_subscriber_save_commit_after>
+            <controller_action_postdispatch_newsletter_subscriber_new>
+                <observers>
+                    <datalayer_newsletter_signup_submit>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>newsletterSigupHook</method>
+                    </datalayer_newsletter_signup_submit>
+                </observers>
+            </controller_action_postdispatch_newsletter_subscriber_new>
+
+            <controller_action_postdispatch_checkout_cart_couponPost>
+                <observers>
+                    <datalayer_cart_coupon_submit>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>couponSubmitHook</method>
+                    </datalayer_cart_coupon_submit>
+                </observers>
+            </controller_action_postdispatch_checkout_cart_couponPost>
+
+            <controller_action_layout_render_before>
+                <observers>
+                    <datalayer_render_hook>
+                        <type>singleton</type>
+                        <class>datalayer/observer</class>
+                        <method>globalDataHook</method>
+                    </datalayer_render_hook>
+                </observers>
+            </controller_action_layout_render_before>
+        </events>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <datalayer>
+                    <file>oro/datalayer.xml</file>
+                </datalayer>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <datalayer>
+            <settings>
+                <variable_name>DATALAYER</variable_name>
+            </settings>
+        </datalayer>
+    </default>
+</config> 

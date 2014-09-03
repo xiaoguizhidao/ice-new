@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Oro_Diamondcandles>
+            <version>0.1.0</version>
+        </Oro_Diamondcandles>
+    </modules>
+    <global>
+        <helpers>
+            <diamondcandles>
+                <class>Oro_Diamondcandles_Helper</class>
+            </diamondcandles>
+        </helpers>
+
+        <models>
+            <diamondcandles>
+                <class>Oro_Diamondcandles_Model</class>
+            </diamondcandles>
+        </models>
+
+        <blocks>
+            <diamondcandles>
+                <class>Oro_Diamondcandles_Block</class>
+            </diamondcandles>
+        </blocks>
+    </global>
+    <crontab>
+        <jobs>
+            <diamondcandles_order>
+                <schedule>
+                    <config_path>diamondcandles/general/cron</config_path>
+                </schedule>
+                <run>
+                    <model>diamondcandles/observer::orderImport</model>
+                </run>
+            </diamondcandles_order>
+        </jobs>
+    </crontab>
+    <default>
+        <diamondcandles>
+            <general>
+                <cron>00 03 * * *</cron>
+                <file>import/dcIceComOrders.tsv</file>
+            </general>
+        </diamondcandles>
+    </default>
+</config>

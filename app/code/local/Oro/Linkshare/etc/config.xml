@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Oro
+ * @package    Oro_Linkshare
+ * @copyright  Copyright (c) 2014 Oro Inc. DBA MageCore (http://www.magecore.com)
+ */
+-->
+<config>
+    <modules>
+        <Oro_Linkshare>
+            <version>0.1.0</version>
+        </Oro_Linkshare>
+    </modules>
+    <global>
+        <models>
+            <linkshare>
+                <class>Oro_Linkshare_Model</class>
+            </linkshare>
+        </models>
+        <blocks>
+            <linkshare>
+                <class>Oro_Linkshare_Block</class>
+            </linkshare>
+        </blocks>
+        <helpers>
+            <linkshare>
+                <class>Oro_Linkshare_Helper</class>
+            </linkshare>
+        </helpers>
+        <!--
+        <resources>
+            <linkshare_setup>
+                <setup>
+                    <module>Oro_Linkshare</module>
+                </setup>
+            </linkshare_setup>
+        </resources>
+        -->
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <linkshare_siteid_catch>
+                        <type>singleton</type>
+                        <class>linkshare/observer</class>
+                        <method>dispatchSiteIdParam</method>
+                    </linkshare_siteid_catch>
+                </observers>
+            </controller_action_predispatch>
+        </events>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <oro_linkshare>
+                    <file>oro/linkshare.xml</file>
+                </oro_linkshare>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <promo>
+            <linkshare>
+                <cookie_required>1</cookie_required>
+                <cookie_name>siteID</cookie_name>
+                <coupon_filter_by_prefix>1</coupon_filter_by_prefix>
+            </linkshare>
+        </promo>
+    </default>
+</config>
