@@ -49,24 +49,6 @@
             </ice_pricekit_read>
         </resources>
     </global>
-    <frontend>
-        <layout>
-            <updates>
-                <ice_pricekit module="ice_pricekit">
-                    <file>ice_pricekit.xml</file>
-                </ice_pricekit>
-            </updates>
-        </layout>
-        <routers>
-            <ice_pricekit>
-                <use>standard</use>
-                <args>
-                    <module>Ice_Pricekit</module>
-                    <frontName>pricekit</frontName>
-                </args>
-            </ice_pricekit>
-        </routers>
-    </frontend>
     <admin>
         <routers>
             <adminhtml>
