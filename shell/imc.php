@@ -89,10 +89,10 @@ class IMC {
     {
         while (true) {
             $line = readline('magento > ');
-            if ($line == 'exit') {
+            if ($line == 'exit' || $line == 'quit') {
                 $this->quit();
             }
-            if (!empty($line)) {
+            elseif (!empty($line)) {
                 $this->addToHistory($line);
                 eval($line);
                 echo "\n";
@@ -119,9 +119,9 @@ class IMC {
         if (!empty($line)) {
             $line = preg_quote($line);
             $funcs = get_defined_functions();
-            $constants = get_defined_constants();//use these?
+            $constants = get_defined_constants();
             $avail = array_merge(get_declared_classes(),$funcs['user'], $funcs['internal'], array());
-            /*$classNameRegex = '[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*';
+            $classNameRegex = '[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*';
                 if (substr($line, -4) == '\:\:') {
             $class = substr($line,0, -4);
             if (in_array($class, $avail)) {
@@ -131,7 +131,7 @@ class IMC {
                         }
                         return $methods;
             }
-            }*/
+            }
             $matches =  preg_grep("/^$line/", $avail);
             if (!empty($matches)) {//will segfault if we return empty array after 3 times...
                 return $matches;

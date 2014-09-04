@@ -2,8 +2,8 @@
 <config>
     <modules>
         <Ice_Pricekit>
-            <active>true</active>
+            <active>false</active>
             <codePool>local</codePool>
-        </Ice_Pricekit>
+        </Ice_Pricekit >
     </modules>
 </config>

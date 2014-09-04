@@ -6,6 +6,26 @@
         </Ice_Pricekit>
     </modules>
     <global>
+        <models>
+        <ice_pricekit>
+            <class>Ice_Pricekit_Model</class>
+            <resourceModel>ice_pricekit_mysql4</resourceModel>
+        </ice_pricekit>
+        <ice_pricekit_mysql4>
+            <class>Ice_Pricekit_Model_Mysql4</class>
+            <entities>
+                <entity>
+                    <table>ice_pricekit_entity</table>
+                </entity>
+                <item>
+                    <table>ice_pricekit_item</table>
+                </item>
+                <type>
+                    <table>ice_pricekit_type</table>
+                </type>
+            </entities>
+        </ice_pricekit_mysql4>
+    </models>
         <blocks>
             <ice_pricekit>
                 <class>Ice_Pricekit_Block</class>
@@ -16,21 +36,7 @@
                 <class>Ice_Pricekit_Helper</class>
             </ice_pricekit>
         </helpers>
-        <models>
-            <ice_pricekit>
-                <class>Ice_Pricekit_Model</class>
-            </ice_pricekit>
-        </models>
         <resources>
-            <ice_pricekit_setup>
-                <setup>
-                    <module>Ice_Pricekit</module>
-                    <class>Ice_Pricekit_Model_Resource_Setup</class>
-                    <connection>
-                        <use>core_setup</use>
-                    </connection>
-                </setup>
-            </ice_pricekit_setup>
             <ice_pricekit_write>
                 <connection>
                     <use>core_write</use>
@@ -43,4 +49,43 @@
             </ice_pricekit_read>
         </resources>
     </global>
+    <frontend>
+        <layout>
+            <updates>
+                <ice_pricekit module="ice_pricekit">
+                    <file>ice_pricekit.xml</file>
+                </ice_pricekit>
+            </updates>
+        </layout>
+        <routers>
+            <ice_pricekit>
+                <use>standard</use>
+                <args>
+                    <module>Ice_Pricekit</module>
+                    <frontName>pricekit</frontName>
+                </args>
+            </ice_pricekit>
+        </routers>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <ice_pricekit before="Mage_Adminhtml">Ice_Pricekit_Adminhtml</ice_pricekit>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <ice_pricekit module="ice_pricekit">
+                    <file>pricekit.xml</file>
+                </ice_pricekit>
+            </updates>
+        </layout>
+    </adminhtml>
 </config>
+

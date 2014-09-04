@@ -1,20 +1,35 @@
 <?xml version="1.0"?>
 <config>
+    <menu>
+        <ice_pricekit module="ice_pricekit">
+            <title>Ice Pricekit</title>
+            <sort_order>71</sort_order>
+            <children>
+                <items module="ice_pricekit">
+                    <title>Manage Product PRices</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/pricekit/index</action>
+                </items>
+            </children>
+        </ice_pricekit>
+    </menu>
     <acl>
         <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
             <admin>
                 <children>
-                    <system>
+                    <ice_pricekit>
+                        <title>Manage Product Prices</title>
+                        <sort_order>200</sort_order>
                         <children>
-                            <config>
-                                <children>
-                                    <ice_pricekit>
-                                        <title>Ice Pricekit</title>
-                                    </ice_pricekit>
-                                </children>
-                            </config>
+                            <items module="ice_pricekit">
+                                <title>Manage Product Prices</title>
+                                <sort_order>0</sort_order>
+                            </items>
                         </children>
-                    </system>
+                    </ice_pricekit>
                 </children>
             </admin>
         </resources>
