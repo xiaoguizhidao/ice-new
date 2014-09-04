@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<layout>
-    <pricemanagement_adminhtml_myform_index>
-        <update handle="pricemanagement_myform_index"/>
-        <reference name="content">
-            <block type="adminhtml/template" name="myform" template="sintax/myform.phtml"/>
-        </reference>
-    </pricemanagement_adminhtml_myform_index>
-</layout>

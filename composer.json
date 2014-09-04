@@ -20,5 +20,14 @@
         "symfony/intl": "*",
         "symfony/property-access": "*",
         "symfony/expression-language": "*"
+    },
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"http://packages.firegento.com"
+        }
+    ],
+    "extra":{
+        "magento-root-dir":"./"
     }
 }

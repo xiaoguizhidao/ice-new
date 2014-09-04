@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_customer_edit>
+        <reference name="left">
+            <reference name="customer_edit_tabs">
+                <block type="ice_pricekit/adminhtml_customer_edit_tab_pricekit" name="tab_pricekit_main" template="ice/pricekit/customer/main.phtml">
+                    <block type="ice_pricekit/adminhtml_customer_edit_tab_pricekit_list" name="tab_pricekit_list" as="tab_pricekit_list" />
+                </block>
+                <action method="addTab">
+                    <name>ice_pricekit</name>
+                    <block>tab_pricekit_main</block>
+                </action>
+            </reference>
+        </reference>
+    </adminhtml_customer_edit>
+    <adminhtml_pricekit_index>
+        <reference name="content">
+            <block type="ice_pricekit/adminhtml_product" name="products" />
+        </reference>
+    </adminhtml_pricekit_index>
+    <adminhtml_pricekit_edit>
+        <reference name="content">
+            <block type="ice_pricekit/adminhtml_products_edit" name="new_product_tabs" />
+        </reference>
+    </adminhtml_pricekit_edit>
+
+</layout>

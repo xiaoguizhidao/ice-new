@@ -1,1 +1,0 @@
-<block type="importexport/adminhtml_import_frame_result" template="importexport/import/frame/result.phtml" name="import.frame.result" alias="import_frame_result" output="toHtml"/>
