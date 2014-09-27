@@ -16,7 +16,7 @@ class Oro_Ice_Model_Catalog_Observer extends Mage_Catalog_Model_Observer
      * @param Varien_Data_Tree_Node_Collection|array $categories
      * @param Varien_Data_Tree_Node $parentCategoryNode
      */
-    protected function _addCategoriesToMenu($categories, $parentCategoryNode)
+    protected function _addCategoriesToMenu($categories, $parentCategoryNode, $menuBlock, $addTags = false)
     {
         foreach ($categories as $category) {
             if (!$category->getIsActive()) {
@@ -42,7 +42,7 @@ class Oro_Ice_Model_Catalog_Observer extends Mage_Catalog_Model_Observer
                 $subcategories = $category->getChildren();
             }
 
-            $this->_addCategoriesToMenu($subcategories, $categoryNode);
+            $this->_addCategoriesToMenu($subcategories, $categoryNode, $menuBlock, $addTags);
         }
     }
 }

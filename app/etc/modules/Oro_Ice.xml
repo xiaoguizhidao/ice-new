@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Oro_Ice>
-            <active>false</active>
+            <active>true</active>
             <codePool>local</codePool>
         </Oro_Ice>
     </modules>

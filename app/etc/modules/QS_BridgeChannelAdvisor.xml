@@ -2,7 +2,7 @@
 <config>
     <modules>
         <QS_BridgeChannelAdvisor>
-            <active>true</active>
+            <active>false</active>
             <codePool>local</codePool>
         </QS_BridgeChannelAdvisor>
     </modules>

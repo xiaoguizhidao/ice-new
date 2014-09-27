@@ -1,6 +1,7 @@
 # Created by .gitignore support plugin (hsz.mobi)
 ### Magento template
 .modgit/
+.idea
 app/code/community/Phoenix/
 app/code/community/Cm/
 app/code/core/
@@ -121,5 +122,7 @@ skin/frontend/default/modern/
 skin/frontend/enterprise
 skin/install/
 var/*
+var/locks/
 connect.cfg
 .idea
+atlassian-ide-plugin.xml
