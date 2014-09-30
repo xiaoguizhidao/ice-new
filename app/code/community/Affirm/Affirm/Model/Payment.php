@@ -30,7 +30,7 @@ class Affirm_Affirm_Model_Payment extends Mage_Payment_Model_Method_Abstract
     protected $_canCapture              = true;
     protected $_canCapturePartial       = false;
     protected $_canRefund               = true;
-    protected $_canRefundInvoicePartial = false;
+    protected $_canRefundInvoicePartial = true;
     protected $_canVoid                 = true;
     protected $_canUseInternal          = true;
     protected $_canUseCheckout          = true;
@@ -276,12 +276,12 @@ class Affirm_Affirm_Model_Payment extends Mage_Payment_Model_Method_Abstract
 
         //authorize the total amount.
         Affirm_Affirm_Model_Payment::authorizePaymentForOrder($payment, $order);
-        $payment->setAmountAuthorized(static::_affirmTotal($order));
+        $payment->setAmountAuthorized(Affirm_Affirm_Model_Payment::_affirmTotal($order));
         $order->save();
         //can capture as well..
         if ($action == self::ACTION_AUTHORIZE_CAPTURE)
         {
-            $payment->setAmountAuthorized(static::_affirmTotal($order));
+            $payment->setAmountAuthorized(Affirm_Affirm_Model_Payment::_affirmTotal($order));
 
             // TODO(brian): It is unclear why this statement is here. If you
             // know why, please replace this message with documentation to
@@ -378,7 +378,7 @@ class Affirm_Affirm_Model_Payment extends Mage_Payment_Model_Method_Abstract
             'tax_amount'=>$this->formatCents($currency, $order->getTaxAmount()),
             "merchant" => array(
                     "public_api_key"=>$this->getConfigData('api_key'), 
-                    "user_confirmation_url"=>Mage::getUrl("affirm/payment/confirm"),
+                    "user_confirmation_url"=>Mage::getUrl('affirm/payment/confirm', array('_secure' => true)),
                     "user_cancel_url"=>Mage::helper('checkout/url')->getCheckoutUrl(),
                     "charge_declined_url"=>Mage::helper('checkout/url')->getCheckoutUrl()
                   ),
@@ -405,8 +405,8 @@ class Affirm_Affirm_Model_Payment extends Mage_Payment_Model_Method_Abstract
         $checkout['financial_product_key'] = $this->getConfigData('financial_product_key');
 
         // TODO(brian): make this safer and less error-prone.
-        $checkout['total'] = Affirm_Util::formatCents(static::_affirmTotal($order));
-        $checkout['meta'] = static::_getMetadata();
+        $checkout['total'] = Affirm_Util::formatCents(Affirm_Affirm_Model_Payment::_affirmTotal($order));
+        $checkout['meta'] = Affirm_Affirm_Model_Payment::_getMetadata();
         return $checkout;
     }
 
@@ -461,16 +461,16 @@ class Affirm_Affirm_Model_Payment extends Mage_Payment_Model_Method_Abstract
         "0.9.56"
       );
       if (in_array($moduleVersion, $incompatibleVersions)) {
-        Affirm_Affirm_Model_Payment::callPrivateMethod($payment, "_authorize", true, static::_affirmTotal($order));
+        Affirm_Affirm_Model_Payment::callPrivateMethod($payment, "_authorize", true, Affirm_Affirm_Model_Payment::_affirmTotal($order));
       } else {
-        $payment->authorize(true, static::_affirmTotal($order));
+        $payment->authorize(true, Affirm_Affirm_Model_Payment::_affirmTotal($order));
       }
     }
 
     // TODO(brian): move this function to a helper library
     private static function callPrivateMethod($object, $methodName)
     {
-      $reflectionClass = new \ReflectionClass($object);
+      $reflectionClass = new ReflectionClass($object);
       $reflectionMethod = $reflectionClass->getMethod($methodName);
       $reflectionMethod->setAccessible(true);
 

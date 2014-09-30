@@ -2,7 +2,7 @@
 <config>
   <modules>
     <Affirm_Affirm>
-      <active>false</active>
+      <active>true</active>
       <codePool>community</codePool>
     </Affirm_Affirm>
   </modules>
