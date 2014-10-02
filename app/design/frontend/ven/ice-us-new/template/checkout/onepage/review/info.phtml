@@ -29,10 +29,10 @@
     <table class="data-table" id="checkout-cart-table">
         <thead>
             <tr>
-                <th  colspan="2" rowspan="<?php echo $rowspan ?>"><?php echo $this->__('Product Name') ?></th>
-                <th colspan="<?php echo $colspan ?>" class="a-center"><?php echo $this->__('Price') ?></th>
-                <th rowspan="<?php echo $rowspan ?>" class="a-center"><?php echo $this->__('Qty') ?></th>
-                <th colspan="<?php echo $colspan ?>" class="a-center"><?php echo $this->__('Subtotal') ?></th>
+                <th  colspan="2"><?php echo $this->__('Product Name') ?></th>
+                <th class="a-center"><?php echo $this->__('Price') ?></th>
+                <th class="a-center"><?php echo $this->__('Qty') ?></th>
+                <th class="a-center"><?php echo $this->__('Subtotal') ?></th>
             </tr>
             <?php if ($this->helper('tax')->displayCartBothPrices()): ?>
                 <tr>
@@ -72,11 +72,7 @@
     </div>
     <script type="text/javascript">
     //<![CDATA[
-        <?php /*if (Mage::helper('ven_content/checkout')->getHidePaymentStep()): ?>
-            review = new Review('<?php echo $this->getUrl('ven_content/checkout_onepage/saveOrder') ?>', '<?php echo $this->getUrl('checkout/onepage/success') ?>', $('checkout-agreements'));
-        <?php else: */?>
-            review = new Review('<?php echo $this->getUrl('checkout/onepage/saveOrder') ?>', '<?php echo $this->getUrl('checkout/onepage/success') ?>', $('checkout-agreements'));
-        <?php //endif; ?>
+        review = new Review('<?php echo $this->getUrl('checkout/onepage/saveOrder', array('form_key' => Mage::getSingleton('core/session')->getFormKey())) ?>', '<?php echo $this->getUrl('checkout/onepage/success') ?>', $('checkout-agreements'));
     //]]>
     </script>
 </div>

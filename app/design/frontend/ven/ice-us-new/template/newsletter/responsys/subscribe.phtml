@@ -1,0 +1,15 @@
+<div class="block-subscribe">
+    <h3><?php echo $this->__('Ice Email Newsletter') ?></h3>
+    <form action="<?php echo $this->getFormAction() ?>" method="post" id="newsletter-validate-detail">
+        <input type="hidden" name="_ri_" value="<?php echo $this->getFormCode(); ?>" />
+        <input type="hidden" name="EMAIL_PERMISSION_STATUS_" id="EMAIL_PERMISSION_STATUS" value="<?php echo $this->getPermissionStatus(); ?>" />
+        <input type="hidden" name="SOURCE_CODE" id="SOURCE_CODE" value="<?php echo $this->getSourceCode(); ?>" />
+        <input placeholder="<?php echo $this->__('Email Address'); ?>" type="text" name="<?php echo $this->getEmailFieldName(); ?>" id="<?php echo $this->getEmailFieldName(); ?>" class="input-text required-entry validate-email" />
+        <button type="submit" title="<?php echo $this->__('Subscribe') ?>" class="button"><?php echo $this->__('Subscribe') ?></button>
+    </form>
+    <script type="text/javascript">
+        //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+        //]]>
+    </script>
+</div>

@@ -88,6 +88,7 @@
         <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
         <p class="required"><?php echo $this->__('* Required Fields') ?></p>
         <form id="login-form" action="<?php echo $this->getPostAction() ?>" method="post">
+            <?php echo $this->getBlockHtml('formkey'); ?>
             <fieldset>
                 <ul class="form-list">
                     <li>

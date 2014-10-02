@@ -1,6 +1,7 @@
 # Created by .gitignore support plugin (hsz.mobi)
 ### Magento template
 .modgit/
+.idea
 app/code/community/Phoenix/
 app/code/community/Cm/
 app/code/core/
@@ -87,6 +88,8 @@ LICENSE.html
 LICENSE.txt
 LICENSE_EE*
 mage
+media/*
+media/css
 media/customer/
 media/dhl/
 media/downloadable/
@@ -94,6 +97,7 @@ media/.htaccess
 media/import/
 media/xmlconnect/
 media/catalog/product/cache/
+media/cache
 api.php
 nbproject/
 pear
@@ -117,6 +121,8 @@ skin/frontend/default/iphone/
 skin/frontend/default/modern/
 skin/frontend/enterprise
 skin/install/
-var/
+var/*
+var/locks/
 connect.cfg
 .idea
+atlassian-ide-plugin.xml

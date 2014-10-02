@@ -2,16 +2,6 @@
 
 class Affirm_Affirm_PaymentController extends Mage_Core_Controller_Front_Action
 {
-    public function preDispatch()
-    {
-        $this->setFlag('renderPreOrder', self::FLAG_NO_START_SESSION, 1);
-        $this->setFlag('renderPreOrder', self::FLAG_NO_CHECK_INSTALLATION, 1);
-        $this->setFlag('renderPreOrder', self::FLAG_NO_COOKIES_REDIRECT, 0);
-        $this->setFlag('renderPreOrder', self::FLAG_NO_PRE_DISPATCH, 1);
-
-        parent::preDispatch();
-    }
-    
 
     private function _getCheckoutSession()
     {
@@ -46,25 +36,18 @@ class Affirm_Affirm_PaymentController extends Mage_Core_Controller_Front_Action
     {
         $order = $this->getRequest()->getParam("order");
         $string = $this->getLayout()->createBlock('affirm/payment_redirect')->setOrder($order)->toHtml();
-        $order_request = Mage::registry("affirm_order_request");
-        if ($order_request)
-        {
-            Mage::getSingleton('checkout/session')->setAffirmOrderRequest(serialize($order_request));
+        $serialized_request = Mage::getSingleton('checkout/session')->getAffirmOrderRequest();
+        $proxy_request = unserialize($serialized_request);
 
-            if (isset($order_request["xhr"]) && $order_request["xhr"])
-            {
-                $this->_getCheckoutSession()->setPreOrderRender($string);
-                $result = array("redirect"=>Mage::getUrl('*/*/redirectPreOrder'));
-                $this->getResponse()->setBody(Mage::helper('core')->jsonEncode($result));
-            }
-            else
-            {
-                $this->getResponse()->setBody($string);
-            }
+        if (isset($proxy_request["xhr"]) && $proxy_request["xhr"])
+        {
+            $this->_getCheckoutSession()->setPreOrderRender($string);
+            $result = array("redirect"=>Mage::getUrl('*/*/redirectPreOrder'));
+            $this->getResponse()->setBody(Mage::helper('core')->jsonEncode($result));
         }
         else
         {
-            Mage::log("The order request for the affirm order has not been recorded.");
+            $this->getResponse()->setBody($string);
         }
     }
 

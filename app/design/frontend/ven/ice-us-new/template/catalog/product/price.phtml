@@ -47,7 +47,7 @@ $_weeeSeparator = '';
 $_simplePricesTax = ($_taxHelper->displayPriceIncludingTax() || $_taxHelper->displayBothPrices());
 $_minimalPriceValue = $_product->getMinimalPrice();
 $_minimalPrice = $_taxHelper->getPrice($_product, $_minimalPriceValue, $_simplePricesTax);
-$_priceMultiplier = Mage::helper('pricemultiplier/data')->getPriceMultiplier();
+$_priceMultiplier = 1.15; // Mage::helper('pricemultiplier/data')->getPriceMultiplier();
 ?>
 
 <?php if (!$_product->isGrouped()): ?>

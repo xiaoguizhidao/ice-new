@@ -39,6 +39,7 @@
     <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
     <div class="section active allow">
         <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="login-form" class="inline-form">
+            <?php echo $this->getBlockHtml('formkey'); ?>
             <div class="col2-set">
                 <div class="col-1 new-users">
                     <h2 class="step-title"><?php echo $this->__('Yes, I am a new customer') ?></h2>
